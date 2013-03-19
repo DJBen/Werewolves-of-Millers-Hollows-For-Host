@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F443CEF916F63FCE00BD39B2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F443CEF816F63FCE00BD39B2 /* libOCMock.a */; };
+		F443CEFA16F63FDD00BD39B2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F443CEF816F63FCE00BD39B2 /* libOCMock.a */; };
+		F49C372216F46DDA005A7EE4 /* WerewolfGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F49C372116F46DDA005A7EE4 /* WerewolfGameTest.m */; };
+		F49C372316F46DEC005A7EE4 /* WerewolfGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96E16EEDE4600961A60 /* WerewolfGame.m */; };
+		F49C372416F46EAE005A7EE4 /* WerewolfPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96B16EEDC8B00961A60 /* WerewolfPlayer.m */; };
 		F4B5C92D16EEDB3F00961A60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C92C16EEDB3F00961A60 /* UIKit.framework */; };
 		F4B5C92F16EEDB3F00961A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C92E16EEDB3F00961A60 /* Foundation.framework */; };
 		F4B5C93116EEDB3F00961A60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C93016EEDB3F00961A60 /* CoreGraphics.framework */; };
@@ -23,7 +28,8 @@
 		F4B5C95516EEDB4200961A60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C92C16EEDB3F00961A60 /* UIKit.framework */; };
 		F4B5C95616EEDB4200961A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C92E16EEDB3F00961A60 /* Foundation.framework */; };
 		F4B5C95E16EEDB4200961A60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4B5C95C16EEDB4200961A60 /* InfoPlist.strings */; };
-		F4B5C96116EEDB4200961A60 /* WerewolfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96016EEDB4200961A60 /* WerewolfTests.m */; };
+		F4B5C96C16EEDC8B00961A60 /* WerewolfPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96B16EEDC8B00961A60 /* WerewolfPlayer.m */; };
+		F4B5C96F16EEDE4600961A60 /* WerewolfGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96E16EEDE4600961A60 /* WerewolfGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F443CEF816F63FCE00BD39B2 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Werewolf/libOCMock.a; sourceTree = "<group>"; };
+		F443CEFC16F6406F00BD39B2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		F443CEFD16F6406F00BD39B2 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		F443CEFE16F6406F00BD39B2 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		F443CEFF16F6406F00BD39B2 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		F443CF0016F6406F00BD39B2 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		F443CF0116F6406F00BD39B2 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		F49C372016F46DDA005A7EE4 /* WerewolfGameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WerewolfGameTest.h; sourceTree = "<group>"; };
+		F49C372116F46DDA005A7EE4 /* WerewolfGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WerewolfGameTest.m; sourceTree = "<group>"; };
 		F4B5C92916EEDB3F00961A60 /* Werewolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werewolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5C92C16EEDB3F00961A60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F4B5C92E16EEDB3F00961A60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,8 +73,10 @@
 		F4B5C95316EEDB4200961A60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F4B5C95B16EEDB4200961A60 /* WerewolfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WerewolfTests-Info.plist"; sourceTree = "<group>"; };
 		F4B5C95D16EEDB4200961A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F4B5C95F16EEDB4200961A60 /* WerewolfTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WerewolfTests.h; sourceTree = "<group>"; };
-		F4B5C96016EEDB4200961A60 /* WerewolfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WerewolfTests.m; sourceTree = "<group>"; };
+		F4B5C96A16EEDC8B00961A60 /* WerewolfPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WerewolfPlayer.h; sourceTree = "<group>"; };
+		F4B5C96B16EEDC8B00961A60 /* WerewolfPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WerewolfPlayer.m; sourceTree = "<group>"; };
+		F4B5C96D16EEDE4600961A60 /* WerewolfGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WerewolfGame.h; sourceTree = "<group>"; };
+		F4B5C96E16EEDE4600961A60 /* WerewolfGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WerewolfGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F443CEF916F63FCE00BD39B2 /* libOCMock.a in Frameworks */,
 				F4B5C92D16EEDB3F00961A60 /* UIKit.framework in Frameworks */,
 				F4B5C92F16EEDB3F00961A60 /* Foundation.framework in Frameworks */,
 				F4B5C93116EEDB3F00961A60 /* CoreGraphics.framework in Frameworks */,
@@ -80,12 +98,26 @@
 				F4B5C95416EEDB4200961A60 /* SenTestingKit.framework in Frameworks */,
 				F4B5C95516EEDB4200961A60 /* UIKit.framework in Frameworks */,
 				F4B5C95616EEDB4200961A60 /* Foundation.framework in Frameworks */,
+				F443CEFA16F63FDD00BD39B2 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F443CEFB16F6406F00BD39B2 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				F443CEFC16F6406F00BD39B2 /* NSNotificationCenter+OCMAdditions.h */,
+				F443CEFD16F6406F00BD39B2 /* OCMArg.h */,
+				F443CEFE16F6406F00BD39B2 /* OCMConstraint.h */,
+				F443CEFF16F6406F00BD39B2 /* OCMock.h */,
+				F443CF0016F6406F00BD39B2 /* OCMockObject.h */,
+				F443CF0116F6406F00BD39B2 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 		F4B5C92016EEDB3E00961A60 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +140,7 @@
 		F4B5C92B16EEDB3F00961A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F443CEF816F63FCE00BD39B2 /* libOCMock.a */,
 				F4B5C92C16EEDB3F00961A60 /* UIKit.framework */,
 				F4B5C92E16EEDB3F00961A60 /* Foundation.framework */,
 				F4B5C93016EEDB3F00961A60 /* CoreGraphics.framework */,
@@ -133,6 +166,7 @@
 		F4B5C93316EEDB3F00961A60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F443CEFB16F6406F00BD39B2 /* OCMock */,
 				F4B5C93416EEDB3F00961A60 /* Werewolf-Info.plist */,
 				F4B5C93516EEDB3F00961A60 /* InfoPlist.strings */,
 				F4B5C93816EEDB3F00961A60 /* main.m */,
@@ -140,6 +174,10 @@
 				F4B5C93E16EEDB3F00961A60 /* Default.png */,
 				F4B5C94016EEDB3F00961A60 /* Default@2x.png */,
 				F4B5C94216EEDB3F00961A60 /* Default-568h@2x.png */,
+				F4B5C96A16EEDC8B00961A60 /* WerewolfPlayer.h */,
+				F4B5C96B16EEDC8B00961A60 /* WerewolfPlayer.m */,
+				F4B5C96D16EEDE4600961A60 /* WerewolfGame.h */,
+				F4B5C96E16EEDE4600961A60 /* WerewolfGame.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,8 +185,8 @@
 		F4B5C95916EEDB4200961A60 /* WerewolfTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4B5C95F16EEDB4200961A60 /* WerewolfTests.h */,
-				F4B5C96016EEDB4200961A60 /* WerewolfTests.m */,
+				F49C372016F46DDA005A7EE4 /* WerewolfGameTest.h */,
+				F49C372116F46DDA005A7EE4 /* WerewolfGameTest.m */,
 				F4B5C95A16EEDB4200961A60 /* Supporting Files */,
 			);
 			path = WerewolfTests;
@@ -277,6 +315,8 @@
 				F4B5C93916EEDB3F00961A60 /* main.m in Sources */,
 				F4B5C93D16EEDB3F00961A60 /* AppDelegate.m in Sources */,
 				F4B5C94C16EEDB4000961A60 /* ViewController.m in Sources */,
+				F4B5C96C16EEDC8B00961A60 /* WerewolfPlayer.m in Sources */,
+				F4B5C96F16EEDE4600961A60 /* WerewolfGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B5C96116EEDB4200961A60 /* WerewolfTests.m in Sources */,
+				F49C372216F46DDA005A7EE4 /* WerewolfGameTest.m in Sources */,
+				F49C372316F46DEC005A7EE4 /* WerewolfGame.m in Sources */,
+				F49C372416F46EAE005A7EE4 /* WerewolfPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,9 +437,16 @@
 		F4B5C96516EEDB4200961A60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Werewolf/Werewolf-Prefix.pch";
 				INFOPLIST_FILE = "Werewolf/Werewolf-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)/Werewolf\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,9 +455,16 @@
 		F4B5C96616EEDB4200961A60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Werewolf/Werewolf-Prefix.pch";
 				INFOPLIST_FILE = "Werewolf/Werewolf-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)/Werewolf\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -424,7 +480,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Werewolf/Werewolf-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Werewolf/**";
 				INFOPLIST_FILE = "WerewolfTests/WerewolfTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Werewolf\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/Werewolf/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -441,7 +506,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Werewolf/Werewolf-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Werewolf/**";
 				INFOPLIST_FILE = "WerewolfTests/WerewolfTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Werewolf\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/Werewolf/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -467,6 +541,7 @@
 				F4B5C96616EEDB4200961A60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4B5C96716EEDB4200961A60 /* Build configuration list for PBXNativeTarget "WerewolfTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +550,7 @@
 				F4B5C96916EEDB4200961A60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
