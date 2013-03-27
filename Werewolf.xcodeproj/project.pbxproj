@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F443CEF916F63FCE00BD39B2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F443CEF816F63FCE00BD39B2 /* libOCMock.a */; };
-		F443CEFA16F63FDD00BD39B2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F443CEF816F63FCE00BD39B2 /* libOCMock.a */; };
+		F443CF0516F7EE3000BD39B2 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = F443CF0416F7EE3000BD39B2 /* iCarousel.m */; };
+		F443CF0F16F7EF3400BD39B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F443CF0D16F7EF2800BD39B2 /* QuartzCore.framework */; };
+		F443CF1116F7F04800BD39B2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F443CF1016F7F04800BD39B2 /* libOCMock.a */; };
+		F443CF1416F7F6E400BD39B2 /* PrepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F443CF1316F7F6E300BD39B2 /* PrepViewController.m */; };
+		F443CF1716F80B8900BD39B2 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F443CF1616F80B8800BD39B2 /* CharacterViewController.m */; };
+		F443CF1A16F8301A00BD39B2 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F443CF1816F8301900BD39B2 /* background.png */; };
+		F443CF1B16F8301A00BD39B2 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = F443CF1916F8301900BD39B2 /* page.png */; };
+		F443CF2116F83AD600BD39B2 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F443CF2016F83AD400BD39B2 /* SettingsTableViewController.m */; };
+		F472294F17026DB300D4D4DA /* VictoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F472294E17026DB200D4D4DA /* VictoryViewController.m */; };
+		F478E68016F8C61D00CE2CEF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F478E67F16F8C61D00CE2CEF /* MBProgressHUD.m */; };
+		F478E68316F8CB4A00CE2CEF /* CharacterSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = F478E68216F8CB4A00CE2CEF /* CharacterSubView.m */; };
+		F478E68716F8DA9100CE2CEF /* ATSDragToReorderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F478E68616F8DA9100CE2CEF /* ATSDragToReorderTableViewController.m */; };
+		F478E68916F90BE800CE2CEF /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = F478E68816F90BE800CE2CEF /* Circle.png */; };
 		F49C372216F46DDA005A7EE4 /* WerewolfGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F49C372116F46DDA005A7EE4 /* WerewolfGameTest.m */; };
 		F49C372316F46DEC005A7EE4 /* WerewolfGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96E16EEDE4600961A60 /* WerewolfGame.m */; };
 		F49C372416F46EAE005A7EE4 /* WerewolfPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C96B16EEDC8B00961A60 /* WerewolfPlayer.m */; };
@@ -23,7 +34,7 @@
 		F4B5C94316EEDB3F00961A60 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B5C94216EEDB3F00961A60 /* Default-568h@2x.png */; };
 		F4B5C94616EEDB4000961A60 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B5C94416EEDB4000961A60 /* MainStoryboard_iPhone.storyboard */; };
 		F4B5C94916EEDB4000961A60 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B5C94716EEDB4000961A60 /* MainStoryboard_iPad.storyboard */; };
-		F4B5C94C16EEDB4000961A60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C94B16EEDB4000961A60 /* ViewController.m */; };
+		F4B5C94C16EEDB4000961A60 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5C94B16EEDB4000961A60 /* GameViewController.m */; };
 		F4B5C95416EEDB4200961A60 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C95316EEDB4200961A60 /* SenTestingKit.framework */; };
 		F4B5C95516EEDB4200961A60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C92C16EEDB3F00961A60 /* UIKit.framework */; };
 		F4B5C95616EEDB4200961A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C92E16EEDB3F00961A60 /* Foundation.framework */; };
@@ -43,13 +54,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F443CEF816F63FCE00BD39B2 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Werewolf/libOCMock.a; sourceTree = "<group>"; };
-		F443CEFC16F6406F00BD39B2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		F443CEFD16F6406F00BD39B2 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
-		F443CEFE16F6406F00BD39B2 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
-		F443CEFF16F6406F00BD39B2 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
-		F443CF0016F6406F00BD39B2 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
-		F443CF0116F6406F00BD39B2 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		F443CF0316F7EE3000BD39B2 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		F443CF0416F7EE3000BD39B2 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		F443CF0716F7EEB400BD39B2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		F443CF0816F7EEB400BD39B2 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		F443CF0916F7EEB400BD39B2 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		F443CF0A16F7EEB400BD39B2 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		F443CF0B16F7EEB400BD39B2 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		F443CF0C16F7EEB400BD39B2 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		F443CF0D16F7EF2800BD39B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F443CF1016F7F04800BD39B2 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = WerewolfTests/libOCMock.a; sourceTree = "<group>"; };
+		F443CF1216F7F6E300BD39B2 /* PrepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrepViewController.h; sourceTree = "<group>"; };
+		F443CF1316F7F6E300BD39B2 /* PrepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrepViewController.m; sourceTree = "<group>"; };
+		F443CF1516F80B8700BD39B2 /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
+		F443CF1616F80B8800BD39B2 /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
+		F443CF1816F8301900BD39B2 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		F443CF1916F8301900BD39B2 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
+		F443CF1F16F83AD400BD39B2 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		F443CF2016F83AD400BD39B2 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		F472294D17026DB000D4D4DA /* VictoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VictoryViewController.h; sourceTree = "<group>"; };
+		F472294E17026DB200D4D4DA /* VictoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VictoryViewController.m; sourceTree = "<group>"; };
+		F478E67E16F8C61D00CE2CEF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F478E67F16F8C61D00CE2CEF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F478E68116F8CB4A00CE2CEF /* CharacterSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterSubView.h; sourceTree = "<group>"; };
+		F478E68216F8CB4A00CE2CEF /* CharacterSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSubView.m; sourceTree = "<group>"; };
+		F478E68516F8DA9100CE2CEF /* ATSDragToReorderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSDragToReorderTableViewController.h; sourceTree = "<group>"; };
+		F478E68616F8DA9100CE2CEF /* ATSDragToReorderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSDragToReorderTableViewController.m; sourceTree = "<group>"; };
+		F478E68816F90BE800CE2CEF /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
 		F49C372016F46DDA005A7EE4 /* WerewolfGameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WerewolfGameTest.h; sourceTree = "<group>"; };
 		F49C372116F46DDA005A7EE4 /* WerewolfGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WerewolfGameTest.m; sourceTree = "<group>"; };
 		F4B5C92916EEDB3F00961A60 /* Werewolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werewolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,8 +98,8 @@
 		F4B5C94216EEDB3F00961A60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F4B5C94516EEDB4000961A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F4B5C94816EEDB4000961A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		F4B5C94A16EEDB4000961A60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4B5C94B16EEDB4000961A60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4B5C94A16EEDB4000961A60 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F4B5C94B16EEDB4000961A60 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		F4B5C95216EEDB4200961A60 /* WerewolfTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WerewolfTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5C95316EEDB4200961A60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F4B5C95B16EEDB4200961A60 /* WerewolfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WerewolfTests-Info.plist"; sourceTree = "<group>"; };
@@ -84,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F443CEF916F63FCE00BD39B2 /* libOCMock.a in Frameworks */,
+				F443CF0F16F7EF3400BD39B2 /* QuartzCore.framework in Frameworks */,
 				F4B5C92D16EEDB3F00961A60 /* UIKit.framework in Frameworks */,
 				F4B5C92F16EEDB3F00961A60 /* Foundation.framework in Frameworks */,
 				F4B5C93116EEDB3F00961A60 /* CoreGraphics.framework in Frameworks */,
@@ -98,24 +129,51 @@
 				F4B5C95416EEDB4200961A60 /* SenTestingKit.framework in Frameworks */,
 				F4B5C95516EEDB4200961A60 /* UIKit.framework in Frameworks */,
 				F4B5C95616EEDB4200961A60 /* Foundation.framework in Frameworks */,
-				F443CEFA16F63FDD00BD39B2 /* libOCMock.a in Frameworks */,
+				F443CF1116F7F04800BD39B2 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F443CEFB16F6406F00BD39B2 /* OCMock */ = {
+		F443CF0216F7EE3000BD39B2 /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				F443CEFC16F6406F00BD39B2 /* NSNotificationCenter+OCMAdditions.h */,
-				F443CEFD16F6406F00BD39B2 /* OCMArg.h */,
-				F443CEFE16F6406F00BD39B2 /* OCMConstraint.h */,
-				F443CEFF16F6406F00BD39B2 /* OCMock.h */,
-				F443CF0016F6406F00BD39B2 /* OCMockObject.h */,
-				F443CF0116F6406F00BD39B2 /* OCMockRecorder.h */,
+				F443CF0316F7EE3000BD39B2 /* iCarousel.h */,
+				F443CF0416F7EE3000BD39B2 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		F443CF0616F7EEB400BD39B2 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				F443CF0716F7EEB400BD39B2 /* NSNotificationCenter+OCMAdditions.h */,
+				F443CF0816F7EEB400BD39B2 /* OCMArg.h */,
+				F443CF0916F7EEB400BD39B2 /* OCMConstraint.h */,
+				F443CF0A16F7EEB400BD39B2 /* OCMock.h */,
+				F443CF0B16F7EEB400BD39B2 /* OCMockObject.h */,
+				F443CF0C16F7EEB400BD39B2 /* OCMockRecorder.h */,
 			);
 			path = OCMock;
+			sourceTree = "<group>";
+		};
+		F478E67D16F8C61D00CE2CEF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F478E67E16F8C61D00CE2CEF /* MBProgressHUD.h */,
+				F478E67F16F8C61D00CE2CEF /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F478E68416F8DA9100CE2CEF /* ReorderingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F478E68516F8DA9100CE2CEF /* ATSDragToReorderTableViewController.h */,
+				F478E68616F8DA9100CE2CEF /* ATSDragToReorderTableViewController.m */,
+			);
+			path = ReorderingTableView;
 			sourceTree = "<group>";
 		};
 		F4B5C92016EEDB3E00961A60 = {
@@ -140,7 +198,8 @@
 		F4B5C92B16EEDB3F00961A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F443CEF816F63FCE00BD39B2 /* libOCMock.a */,
+				F443CF1016F7F04800BD39B2 /* libOCMock.a */,
+				F443CF0D16F7EF2800BD39B2 /* QuartzCore.framework */,
 				F4B5C92C16EEDB3F00961A60 /* UIKit.framework */,
 				F4B5C92E16EEDB3F00961A60 /* Foundation.framework */,
 				F4B5C93016EEDB3F00961A60 /* CoreGraphics.framework */,
@@ -156,8 +215,16 @@
 				F4B5C93C16EEDB3F00961A60 /* AppDelegate.m */,
 				F4B5C94416EEDB4000961A60 /* MainStoryboard_iPhone.storyboard */,
 				F4B5C94716EEDB4000961A60 /* MainStoryboard_iPad.storyboard */,
-				F4B5C94A16EEDB4000961A60 /* ViewController.h */,
-				F4B5C94B16EEDB4000961A60 /* ViewController.m */,
+				F443CF1216F7F6E300BD39B2 /* PrepViewController.h */,
+				F443CF1316F7F6E300BD39B2 /* PrepViewController.m */,
+				F443CF1F16F83AD400BD39B2 /* SettingsTableViewController.h */,
+				F443CF2016F83AD400BD39B2 /* SettingsTableViewController.m */,
+				F443CF1516F80B8700BD39B2 /* CharacterViewController.h */,
+				F443CF1616F80B8800BD39B2 /* CharacterViewController.m */,
+				F4B5C94A16EEDB4000961A60 /* GameViewController.h */,
+				F4B5C94B16EEDB4000961A60 /* GameViewController.m */,
+				F472294D17026DB000D4D4DA /* VictoryViewController.h */,
+				F472294E17026DB200D4D4DA /* VictoryViewController.m */,
 				F4B5C93316EEDB3F00961A60 /* Supporting Files */,
 			);
 			path = Werewolf;
@@ -166,7 +233,9 @@
 		F4B5C93316EEDB3F00961A60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F443CEFB16F6406F00BD39B2 /* OCMock */,
+				F443CF0216F7EE3000BD39B2 /* iCarousel */,
+				F478E67D16F8C61D00CE2CEF /* MBProgressHUD */,
+				F478E68416F8DA9100CE2CEF /* ReorderingTableView */,
 				F4B5C93416EEDB3F00961A60 /* Werewolf-Info.plist */,
 				F4B5C93516EEDB3F00961A60 /* InfoPlist.strings */,
 				F4B5C93816EEDB3F00961A60 /* main.m */,
@@ -178,6 +247,11 @@
 				F4B5C96B16EEDC8B00961A60 /* WerewolfPlayer.m */,
 				F4B5C96D16EEDE4600961A60 /* WerewolfGame.h */,
 				F4B5C96E16EEDE4600961A60 /* WerewolfGame.m */,
+				F478E68116F8CB4A00CE2CEF /* CharacterSubView.h */,
+				F478E68216F8CB4A00CE2CEF /* CharacterSubView.m */,
+				F443CF1816F8301900BD39B2 /* background.png */,
+				F443CF1916F8301900BD39B2 /* page.png */,
+				F478E68816F90BE800CE2CEF /* Circle.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +269,7 @@
 		F4B5C95A16EEDB4200961A60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F443CF0616F7EEB400BD39B2 /* OCMock */,
 				F4B5C95B16EEDB4200961A60 /* WerewolfTests-Info.plist */,
 				F4B5C95C16EEDB4200961A60 /* InfoPlist.strings */,
 			);
@@ -278,6 +353,9 @@
 				F4B5C94316EEDB3F00961A60 /* Default-568h@2x.png in Resources */,
 				F4B5C94616EEDB4000961A60 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F4B5C94916EEDB4000961A60 /* MainStoryboard_iPad.storyboard in Resources */,
+				F443CF1A16F8301A00BD39B2 /* background.png in Resources */,
+				F443CF1B16F8301A00BD39B2 /* page.png in Resources */,
+				F478E68916F90BE800CE2CEF /* Circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,9 +392,17 @@
 			files = (
 				F4B5C93916EEDB3F00961A60 /* main.m in Sources */,
 				F4B5C93D16EEDB3F00961A60 /* AppDelegate.m in Sources */,
-				F4B5C94C16EEDB4000961A60 /* ViewController.m in Sources */,
+				F4B5C94C16EEDB4000961A60 /* GameViewController.m in Sources */,
 				F4B5C96C16EEDC8B00961A60 /* WerewolfPlayer.m in Sources */,
 				F4B5C96F16EEDE4600961A60 /* WerewolfGame.m in Sources */,
+				F443CF0516F7EE3000BD39B2 /* iCarousel.m in Sources */,
+				F443CF1416F7F6E400BD39B2 /* PrepViewController.m in Sources */,
+				F443CF1716F80B8900BD39B2 /* CharacterViewController.m in Sources */,
+				F443CF2116F83AD600BD39B2 /* SettingsTableViewController.m in Sources */,
+				F478E68016F8C61D00CE2CEF /* MBProgressHUD.m in Sources */,
+				F478E68316F8CB4A00CE2CEF /* CharacterSubView.m in Sources */,
+				F478E68716F8DA9100CE2CEF /* ATSDragToReorderTableViewController.m in Sources */,
+				F472294F17026DB300D4D4DA /* VictoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +534,7 @@
 					"\"$(SRCROOT)/Werewolf\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -466,6 +553,7 @@
 					"\"$(SRCROOT)/Werewolf\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -480,15 +568,15 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Werewolf/Werewolf-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Werewolf/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/WerewolfTests/**";
 				INFOPLIST_FILE = "WerewolfTests/WerewolfTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Werewolf\"",
+					"\"$(SRCROOT)/WerewolfTests\"",
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/Werewolf/libOCMock.a",
+					"$(SRCROOT)/WerewolfTests/libOCMock.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -506,15 +594,15 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Werewolf/Werewolf-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Werewolf/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/WerewolfTests/**";
 				INFOPLIST_FILE = "WerewolfTests/WerewolfTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Werewolf\"",
+					"\"$(SRCROOT)/WerewolfTests\"",
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/Werewolf/libOCMock.a",
+					"$(SRCROOT)/WerewolfTests/libOCMock.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

@@ -10,13 +10,20 @@
 
 @implementation WerewolfPlayer
 
-- (id) initWithName:(NSString *)name {
+- (id) init {
     self = [super init];
     if (self) {
-        self.name = name;
         self.character = WerewolfCharacterUndefined;
         self.alive = YES;
         self.canVote = YES;
+    }
+    return self;
+}
+
+- (id) initWithName:(NSString *)name {
+    self = [self init];
+    if (self) {
+        self.name = name;
     }
     return self;
 }
@@ -95,6 +102,25 @@
 #pragma mark - Overriding description
 - (NSString *) description {
     return [NSString stringWithFormat:@"<WerewolfPlayer: Name - %@, Character - %@, Alive - %@, Can Vote - %@, Damage Source - %@>", self.name, self.characterName, self.alive?@"YES":@"NO", self.canVote?@"YES":@"NO", [self.class characterNameForCharacter:self.damageSource]];
+}
+
+#pragma mark - NSCoding Protocol
+- (void) encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeBool:self.alive forKey:@"Alive"];
+    [aCoder encodeBool:self.canVote forKey:@"CanVote"];
+    [aCoder encodeObject:self.name forKey:@"Name"];
+    [aCoder encodeInt:self.character forKey:@"Character"];
+}
+
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    self = [self init];
+    if (self) {
+        self.name = [aDecoder decodeObjectForKey:@"Name"];
+        self.character = [aDecoder decodeIntForKey:@"Character"];
+        self.alive = [aDecoder decodeBoolForKey:@"Alive"];
+        self.canVote = [aDecoder decodeBoolForKey:@"CanVote"];
+    }
+    return self;
 }
 
 @end

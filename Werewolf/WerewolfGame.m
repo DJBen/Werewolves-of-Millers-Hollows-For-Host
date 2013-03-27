@@ -18,6 +18,8 @@
         _players = [[NSMutableArray alloc] init];
         _phase = WerewolfGamePhaseSettings;
         _shieldPresent = YES;
+        _hunterShootingMode = NO;
+        _electSheriffMode = NO;
     }
     return self;
 }
@@ -103,6 +105,13 @@
     return count;
 }
 
+- (WerewolfPlayer *) playerAtIndex:(NSUInteger)index {
+    if (index >= self.players.count) {
+        return nil;
+    }
+    return self.players[index];
+}
+
 - (WerewolfPlayer *) playerWithCharacter:(WerewolfCharacter)character mustAlive:(BOOL)mustAlive {
     __block WerewolfPlayer *result = nil;
     [self.players enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -137,6 +146,39 @@
 }
 
 #pragma mark - Game
++ (NSString *) phaseNameWithPhase:(WerewolfGamePhase)phase {
+    switch (phase) {
+        case WerewolfGamePhaseDay:
+            return @"Daybreak";
+        case WerewolfGamePhaseNight:
+            return @"Nightfall";
+        case WerewolfGamePhasePros:
+            return @"Prostitute's Turn";
+        case WerewolfGamePhaseSeer:
+            return @"Seer's Turn";
+        case WerewolfGamePhaseSetLovers:
+            return @"Cupid's Turn";
+        case WerewolfGamePhaseSettings:
+            return @"Game Settings";
+        case WerewolfGamePhaseSummary1:
+        case WerewolfGamePhaseSummary2:
+            return @"Summary";
+        case WerewolfGamePhaseVote:
+            return @"Time to Vote";
+        case WerewolfGamePhaseWerewolf:
+            return @"Werewolves' Turn";
+        case WerewolfGamePhaseWitch:
+            return @"Witch's Turn";
+        default:
+            break;
+    }
+    return nil;
+}
+
+- (NSString *) phaseName {
+    return [self.class phaseNameWithPhase:self.phase];
+}
+
 - (BOOL) hasCharacter:(WerewolfCharacter)character {
     for (WerewolfPlayer *player in self.players) {
         if ([player character] == character) {
@@ -174,17 +216,85 @@
     return nil;
 }
 
-- (BOOL) canTargetPlayer:(WerewolfPlayer *)recipent byPlayer:(WerewolfPlayer *)actor {
-    if (!recipent || actor.character == WerewolfCharacterUndefined || actor.character == WerewolfCharacterCivilian || actor.character == WerewolfCharacterElder || actor.character == WerewolfCharacterLittleGirl || actor.character == WerewolfCharacterScapegoat) {
+- (BOOL) canChoosePlayer:(WerewolfPlayer *)player {
+    if (!player || !player.isAlive) {
         return NO;
     }
-    if (!recipent.isAlive) return NO;
-    if ([recipent isEqualToWerewolfPlayer:actor]) {
-        if (actor.character == WerewolfCharacterProstitute || actor.character == WerewolfCharacterSeer) {
-            return NO;
+    switch (self.phase) {
+        case WerewolfGamePhaseSetLovers:
+            return YES;
+        case WerewolfGamePhasePros: {
+            WerewolfPlayer *pros = [self playerWithCharacter:WerewolfCharacterProstitute mustAlive:YES];
+            if (!pros) return NO;
+            if (player.character == WerewolfCharacterProstitute) return NO;
+            if ([pros isEqualToWerewolfPlayer:self.playerSlept]) return NO;
+            return YES;
         }
+        case WerewolfGamePhaseSeer: {
+            WerewolfPlayer *seer = [self playerWithCharacter:WerewolfCharacterSeer mustAlive:YES];
+            if (!seer) return NO;
+            if (player.character == WerewolfCharacterSeer) return NO;
+            if ([seer isEqualToWerewolfPlayer:self.playerSlept]) return NO;
+            return YES;
+        }
+        case WerewolfGamePhaseWerewolf: {
+            NSArray *weres = self[WerewolfCharacterWerewolf];
+            if (!weres || weres.count == 0) return NO;
+            if (weres.count == 1 && [(WerewolfPlayer *)weres[0] isEqualToWerewolfPlayer:self.playerSlept]) return NO;
+            return YES;
+        }
+        case WerewolfGamePhaseWitch: {
+            WerewolfPlayer *witch = [self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES];
+            if (!witch) return NO;
+            if ([witch isEqualToWerewolfPlayer:self.playerSlept]) return NO;
+            return YES;
+        }
+        case WerewolfGamePhaseVote:
+            return YES;
+        case WerewolfGamePhaseSummary1:
+        case WerewolfGamePhaseSummary2:
+            if (_electSheriffMode || _hunterShootingMode) {
+                return YES;
+            }
+            break;
+        default:
+            break;
     }
-    return YES;
+    return NO;
+}
+
+- (NSRange) numberOfPlayersCanChoose {
+    switch (self.phase) {
+        case WerewolfGamePhasePros: 
+            if (![self playerWithCharacterCount:WerewolfCharacterProstitute mustAlive:YES]) return NSMakeRange(0, 0);
+            if ([[self playerWithCharacter:WerewolfCharacterProstitute mustAlive:YES] isEqualToWerewolfPlayer:self.playerSlept]) return NSMakeRange(0, 0);
+            return NSMakeRange(0, 1);
+        case WerewolfGamePhaseSeer:
+            if (![self playerWithCharacterCount:WerewolfCharacterSeer mustAlive:YES]) return NSMakeRange(0, 0);
+            if ([[self playerWithCharacter:WerewolfCharacterSeer mustAlive:YES] isEqualToWerewolfPlayer:self.playerSlept]) return NSMakeRange(0, 0);
+            return NSMakeRange(1, 1);
+        case WerewolfGamePhaseSetLovers:
+            return NSMakeRange(2, 2);
+        case WerewolfGamePhaseWerewolf:
+            if ([self playerWithCharacterCount:WerewolfCharacterWerewolf mustAlive:YES] == 1 && [[self playerWithCharacter:WerewolfCharacterWerewolf mustAlive:YES] isEqualToWerewolfPlayer:self.playerSlept]) return NSMakeRange(0, 0);
+            return NSMakeRange(0, 1);
+        case WerewolfGamePhaseVote:
+            return NSMakeRange(0, 1);
+        case WerewolfGamePhaseWitch:
+            if (![self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES]) return NSMakeRange(0, 0);
+            if ([[self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES] isEqualToWerewolfPlayer:self.playerSlept]) return NSMakeRange(0, 0);
+            return NSMakeRange(0, 1);
+        case WerewolfGamePhaseSummary1:
+        case WerewolfGamePhaseSummary2:
+            if (_electSheriffMode) {
+                return NSMakeRange(1, 1);
+            } else if (_hunterShootingMode) {
+                return NSMakeRange(0, 1);
+            }
+        default:
+            break;
+    }
+    return NSMakeRange(0, 0);
 }
 
 - (void) checkVictory {
@@ -209,7 +319,7 @@
 }
 
 - (void) next {
-    if (self.phase == WerewolfGamePhaseSummary) {
+    if (self.phase == WerewolfGamePhaseSummary2) {
         self.phase = WerewolfGamePhaseNight;
         self.round++;
     } else {
@@ -227,41 +337,95 @@
         case WerewolfGamePhaseNight:
             info = @{@"Prompt" : @"Nightfall, please close your eyes."};
             break;
-        case WerewolfGamePhasePros:
-            info = @{@"Prompt" : @"Prostitute, please choose a player to have fun with.", @"Character" : [self playerWithCharacter:WerewolfCharacterProstitute mustAlive:YES]};
+        case WerewolfGamePhasePros: {
+            WerewolfPlayer *pros = [self playerWithCharacter:WerewolfCharacterProstitute mustAlive:YES];
+            if (pros) {
+                info = @{@"Prompt" : @"Prostitute, please choose a player to have fun with.", @"Character" : pros};
+            } else {
+                info = @{@"Prompt" : @"Prostitute has dead. Pretend to say \"Please choose a player to have fun with.\""};
+            }
             break;
+        }
         case WerewolfGamePhaseWerewolf:
-            info = @{@"Prompt" : @"Werewolves, please choose a player to assualt.", @"Characters" : [self playersWithCharacter:WerewolfCharacterWerewolf mustAlive:YES]};
+            if ([self playersWithCharacter:WerewolfCharacterWerewolf mustAlive:YES].count == 1 && [[self playerWithCharacter:WerewolfCharacterWerewolf mustAlive:YES] isEqualToWerewolfPlayer:self.playerSlept]) {
+                info = @{@"Prompt" : @"The only werewolf is enjoy his/her night."};
+            } else {
+                info = @{@"Prompt" : @"Werewolves, please choose a player to assualt.", @"Characters" : [self playersWithCharacter:WerewolfCharacterWerewolf mustAlive:YES]};
+            }
             break;
-        case WerewolfGamePhaseSeer:
-            info = @{@"Prompt" : @"Seer, please choose a player to check identity.", @"Character" : [self playerWithCharacter:WerewolfCharacterSeer mustAlive:YES]};
+        case WerewolfGamePhaseSeer: {
+            WerewolfPlayer *seer = [self playerWithCharacter:WerewolfCharacterSeer mustAlive:YES];
+            if (seer) {
+                if ([seer isEqualToWerewolfPlayer:self.playerSlept]) {
+                    info = @{@"Prompt" : @"Seer is enjoying his/her night."};
+                } else {
+                    info = @{@"Prompt" : @"Seer, please choose a player to check identity.", @"Character" : seer};
+                }
+            } else {
+                info = @{@"Prompt" : @"Seer has dead. Pretend to say \"please choose a player to check.\""};
+            }
             break;
+        }
         case WerewolfGamePhaseWitch: {
             WerewolfPlayer *playerAssualted = self.victim;
-            NSString *infoString = [NSString stringWithFormat:@"Witch, player %@ (%@) is assualted, would you like to save him/her? Or would you like to poison anyone?", playerAssualted.name, playerAssualted.characterName];
-            info = @{@"Prompt" : infoString, @"Character" : [self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES], @"Victim" : playerAssualted};
+            WerewolfPlayer *witch = [self playerWithCharacter:WerewolfCharacterWitch mustAlive:NO];
+            if (witch.isAlive) {
+                NSString *infoString;
+                if ([witch isEqualToWerewolfPlayer:self.playerSlept]) {
+                    infoString = [NSString stringWithFormat:@"Witch (%@) is enjoy his/her night.", witch.name];
+                    info = @{@"Prompt" : infoString, @"Character" : [self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES]};
+                    break;
+                }
+                infoString = [NSString stringWithFormat:@"Witch (%@), player %@ (%@) is assualted, would you like to save him/her? Or poison anyone?", witch.name, playerAssualted.name, playerAssualted.characterName];
+                if (playerAssualted) {
+                    info = @{@"Prompt" : infoString, @"Character" : [self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES], @"Victim" : playerAssualted};
+                } else {
+                    infoString = [NSString stringWithFormat:@"Witch (%@), no player is assualted. Would you like to poison anyone?", witch.name];
+                    info = @{@"Prompt" : infoString, @"Character" : [self playerWithCharacter:WerewolfCharacterWitch mustAlive:YES]};
+                }
+            } else {
+                NSString *infoString = [NSString stringWithFormat:@"Witch (%@) is dead. Player %@ (%@) is assualted.", witch.name, playerAssualted.name, playerAssualted.characterName];
+                if (playerAssualted) {
+                    info = @{@"Prompt" : infoString, @"Victim" : playerAssualted};
+                } else {
+                    infoString = [NSString stringWithFormat:@"Witch (%@) is dead. No player is assualted.", witch.name];
+                    info = @{@"Prompt" : infoString};
+                }
+            }
             break;
         }
         case WerewolfGamePhaseDay:
-            [self summary];
-            if (self.round == 1) {
-                [self.delegate electSheriff];
-            }
             info = @{@"Prompt" : @"Daybreak, please open your eyes."};
             break;
         case WerewolfGamePhaseVote: {
-            NSString *infoString = [NSString stringWithFormat:@"Please vote the suspect to be executed. %@ (Sheriff) has 2 votes", self.sheriff.name];
+            NSString *sheriffString = self.sheriff.name?[NSString stringWithFormat:@"%@ (Sheriff) has 2 votes", self.sheriff.name]:@"";
+            NSString *infoString = [NSString stringWithFormat:@"Please vote the suspect to be executed. %@", sheriffString];
             info = @{@"Prompt" : infoString};
             break;
         }
-        case WerewolfGamePhaseSummary:
-            [self summary];
-            break;
+        case WerewolfGamePhaseSummary1:
+        case WerewolfGamePhaseSummary2:
+            info = @{@"Prompt" : @"Summary ended. Please continue."};
         default:
             break;
     }
     
     [self.delegate gamePhase:self.phase info:info];
+    
+    switch (self.phase) {
+        case WerewolfGamePhaseSummary1:
+            if (self.round == 1) {
+                _electSheriffMode = YES;
+                [self.delegate electSheriff];
+            }
+            [self summary:self.phase];
+            break;
+        case WerewolfGamePhaseSummary2:
+            [self summary:self.phase];
+            break;
+        default:
+            break;
+    }
 }
 
 - (void) werewolfKillPlayer:(WerewolfPlayer *)player {
@@ -295,10 +459,28 @@
 - (void) hunterShootPlayer:(WerewolfPlayer *)player {
     self.playerShot = player;
     player.damageSource = WerewolfCharacterHunter;
-    [self executePlayer:player];
+    _hunterShootingMode = NO;
+    [self summary:self.phase];
 }
 
-- (void) summary {
+- (void) electPlayerAsSheriff:(WerewolfPlayer *)player {
+    self.sheriff = player;
+    _electSheriffMode = NO;
+}
+
+- (void) summary:(WerewolfGamePhase)gamePhase {
+    // Clean up remaining status first
+    // If it is daytime afternoon, then clean up the mess yesterday night
+    // If it is daybreak, clean up vote status last afternoon
+    if (gamePhase == WerewolfGamePhaseSummary2) {
+        self.playerSlept = nil;
+        self.playerSaved = nil;
+        self.playerPoisoned = nil;
+        self.victim = nil;
+    } else if (gamePhase == WerewolfGamePhaseSummary1) {
+        self.playerVoted = nil;
+    }
+    
     NSMutableArray *deathRow = [[NSMutableArray alloc] init];
     
     if (self.victim) {
@@ -309,6 +491,8 @@
             self.shieldPresent = NO;
             if ([self.playerSaved isEqualToWerewolfPlayer:self.victim]) self.playerSaved = nil;
             self.victim.damageSource = WerewolfCharacterUndefined;
+        } else if (self.victim.character == WerewolfCharacterProstitute && self.playerSlept) {
+            // Do nothing, prostitute is not home
         } else {
             if ([self.playerSaved isEqualToWerewolfPlayer:self.victim]) {
                 self.playerSaved = nil;
@@ -323,21 +507,50 @@
         self.victim = nil;
     }
     
-    if (self.playerPoisoned) [deathRow addObject:self.playerPoisoned];
+    if (self.playerPoisoned) {
+        if (!(self.victim.character == WerewolfCharacterProstitute && self.playerSlept)) {
+            [deathRow addObject:self.playerPoisoned];
+        }
+    }
     
     if (self.playerVoted) [deathRow addObject:self.playerVoted];
     
-    // Process hunter second last
+    if (self.playerShot) [deathRow addObject:self.playerShot];
+    
+    NSMutableArray *newDeathRow = [[NSMutableArray alloc] init];
+    
+    for (WerewolfPlayer *player in deathRow) {
+        if (player.lover && ![player.lover isEqualToWerewolfPlayer:self.playerSaved]) {
+            [newDeathRow addObject:player.lover];
+            player.lover.damageSource = WerewolfCharacterCupid;
+            break;
+        }
+    }
+    
+    [deathRow addObjectsFromArray:newDeathRow];
+    
+    newDeathRow = [[NSMutableArray alloc] init];
+
+    for (WerewolfPlayer *player in deathRow) {
+        if ([player isEqualToWerewolfPlayer:self.playerSlept]) {
+            [newDeathRow addObject:[self playerWithCharacter:WerewolfCharacterProstitute mustAlive:YES]];
+            break;
+        }
+    }
+    
+    [deathRow addObjectsFromArray:newDeathRow];
+    
+    // Process sheriff second last
+    if ([deathRow indexOfObject:self.sheriff] != NSNotFound) {
+        [deathRow removeObject:self.sheriff];
+        [deathRow addObject:self.sheriff];
+    }
+    
+    // Process hunter last
     WerewolfPlayer *hunter = [self playerWithCharacter:WerewolfCharacterHunter mustAlive:YES];
     if (hunter && [deathRow indexOfObject:hunter] != NSNotFound) {
         [deathRow removeObject:hunter];
         [deathRow addObject:hunter];
-    }
-    
-    // Process sheriff last
-    if ([deathRow indexOfObject:self.sheriff] != NSNotFound) {
-        [deathRow removeObject:self.sheriff];
-        [deathRow addObject:self.sheriff];
     }
     
     for (WerewolfPlayer *player in deathRow) {
@@ -355,29 +568,18 @@
     if ([self.playerSaved isEqualToWerewolfPlayer:player]) self.playerSaved = nil;
     if ([self.playerVoted isEqualToWerewolfPlayer:player]) self.playerVoted = nil;
     if ([self.playerShot isEqualToWerewolfPlayer:player]) self.playerShot = nil;
+    if ([self.playerSlept isEqualToWerewolfPlayer:player]) self.playerSlept = nil;
     
-    if (player.lover) {
-        player.lover.damageSource = WerewolfCharacterCupid;
-        [self executePlayer:player.lover];
-    }
+    [self.delegate updateDeaths:player];
     
-    if ([self.playerSlept isEqualToWerewolfPlayer:player]) {
-        self.playerSlept = nil;
-        [self executePlayer:[self playerWithCharacter:WerewolfCharacterProstitute mustAlive:YES]];
-    }
-    
-    if (player.character == WerewolfCharacterProstitute) {
-        [self executePlayer:[self playerSlept]];
+    if ([self.sheriff isEqualToWerewolfPlayer:player]) {
+        _electSheriffMode = YES;
+        [self.delegate electSheriff];
     }
     
     if (player.character == WerewolfCharacterHunter) {
+        _hunterShootingMode = YES;
         [self.delegate hunterChooseTarget];
-    }
-    
-    [self.delegate updateStatus];
-    
-    if ([self.sheriff isEqualToWerewolfPlayer:player]) {
-        [self.delegate electSheriff];
     }
     
     [self checkVictory];

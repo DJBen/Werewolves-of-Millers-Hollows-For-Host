@@ -24,22 +24,23 @@ typedef enum {
     WerewolfGamePhaseSeer,
     WerewolfGamePhaseWitch,
     WerewolfGamePhaseDay,
+    WerewolfGamePhaseSummary1,
     WerewolfGamePhaseVote,
-    WerewolfGamePhaseSummary
+    WerewolfGamePhaseSummary2
 } WerewolfGamePhase;
 
-@protocol WerewolfGameProtocol <NSObject>
+@protocol WerewolfGameDelegate <NSObject>
 - (void) victory:(WerewolfGameVictory)victory;
 - (void) gamePhase:(WerewolfGamePhase)phase info:(NSDictionary *)info;
 - (void) electSheriff;
 - (void) hunterChooseTarget;
-- (void) updateStatus;
+- (void) updateDeaths:(WerewolfPlayer *)deadPlayer;
 @end
 
-@interface WerewolfGame : NSObject
+@interface WerewolfGame : NSObject 
 
 // Delegate
-@property (nonatomic, weak) id <WerewolfGameProtocol> delegate;
+@property (nonatomic, weak) id <WerewolfGameDelegate> delegate;
 
 // Indicate whether game has started.
 @property (nonatomic, getter = isGameStarted) BOOL gameStarted;
@@ -84,12 +85,28 @@ typedef enum {
 // However, he can be easily poisoned to death by witch.
 @property (nonatomic, getter = isShieldPresent) BOOL shieldPresent;
 
+@property (nonatomic) BOOL hunterShootingMode;
+@property (nonatomic) BOOL electSheriffMode;
+
 /**
  * @param players - array containing all player objects
  * @return game object
  */
 
 - (id) initWithPlayers:(NSArray *)players;
+
+/**
+ * @param phase - the game phase
+ * @return the name description of input game phase
+ */
+
++ (NSString *) phaseNameWithPhase:(WerewolfGamePhase)phase;
+
+/**
+ * @return name of current game phase
+ */
+
+- (NSString *) phaseName;
 
 /**
  * @param player - the player to add
@@ -120,6 +137,13 @@ typedef enum {
  */
 
 - (void) removePlayer:(WerewolfPlayer *)player;
+
+/**
+ * @param index - the index of player
+ * @return player at index
+ */
+
+- (WerewolfPlayer *) playerAtIndex:(NSUInteger)index;
 
 /**
  * @param character - character to find
@@ -219,16 +243,24 @@ typedef enum {
 
 - (void) hunterShootPlayer:(WerewolfPlayer *)player;
 
+- (void) electPlayerAsSheriff:(WerewolfPlayer *)player;
+
 - (void) votePlayer:(WerewolfPlayer *)player;
 
 /**
- * Check if current character can target a chosen player.
+ * Check if current player(s) in his/her/their turn can target a chosen player.
  * @return If player is dead or is character him/herself (e.g prostitute), then cannot, else can
- * @param ricipent - the player to receive action
- * @param player - the player to act
+ * @param player - the player to receive action
  */
 
-- (BOOL) canTargetPlayer:(WerewolfPlayer *)recipent byPlayer:(WerewolfPlayer *)actor;
+- (BOOL) canChoosePlayer:(WerewolfPlayer *)player;
+
+/**
+ * Show how many players can be chosen at current phase
+ @return the range contains [a, b] , a - minimum number to choose, b - max number to choose
+ */
+
+- (NSRange) numberOfPlayersCanChoose;
 
 /**
  * @param index - the *character* of players to look up

@@ -18,7 +18,7 @@ typedef struct {
     int WerewolfPlayerTypeAbilityUser;
 } WerewolfPlayerType;
 
-@interface WerewolfPlayer : NSObject 
+@interface WerewolfPlayer : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic) WerewolfCharacter character;

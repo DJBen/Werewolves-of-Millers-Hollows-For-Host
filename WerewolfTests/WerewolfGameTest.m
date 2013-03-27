@@ -59,7 +59,7 @@ WerewolfGame *game;
 }
 
 - (void) testSimulateGame {
-    id mockGamePhaseCallback = [OCMockObject mockForProtocol:@protocol(WerewolfGameProtocol)];
+    id mockGamePhaseCallback = [OCMockObject mockForProtocol:@protocol(WerewolfGameDelegate)];
     game.delegate = mockGamePhaseCallback;
     [game addPlayerWithName:@"Ben" character:WerewolfCharacterWerewolf];
     [game addPlayerWithName:@"Ina" character:WerewolfCharacterSeer];
@@ -149,13 +149,17 @@ WerewolfGame *game;
     [game witchUsePotionToPlayer:game[@"ck~"] isGoodPotion:YES];
     STAssertEquals(game.playerSaved, game[@"ck~"], nil);
     
-    [[mockGamePhaseCallback expect] electSheriff];
     [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseDay info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
         STAssertNotNil(info[@"Prompt"], @"!!!");
         STAssertTrue(info[@"Prompt"] > 0, @"WTF");
         NSLog(@"%@", info[@"Prompt"]);
         return YES;
     }]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary1 info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] electSheriff];
     [game next];
     [mockGamePhaseCallback verify];
     game.sheriff = game[@"Jenny"];
@@ -175,8 +179,8 @@ WerewolfGame *game;
     STAssertEquals(game.playerVoted, game[@"Ben"], nil);
     
     // Ben will die, so update status once
-    [[mockGamePhaseCallback expect] updateStatus];
-    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary2 info:[OCMArg any]];
     [game next];
     [mockGamePhaseCallback verify];
     STAssertFalse([(WerewolfPlayer *)game[@"Ben"] isAlive], @"Ben should be dead");
@@ -188,6 +192,7 @@ WerewolfGame *game;
      * Ina - Seer, ck - witch, Jenny - Cupid, YK - Civ, SMJ - Pros, Lulu - Hunter,
      * Ben, Xin Song and Diao Jilao - Werewolves
      * Lovers - Xin Song and ck
+     * Jenny is elected as sheriff
      *
      * Diao JiLao - sleep with pros
      * Werewolves - kill ck
@@ -246,11 +251,6 @@ WerewolfGame *game;
     STAssertEquals(game.isPoisonUsed, YES, nil);
     STAssertEquals(game.isPoisonUsed, YES, nil);
 
-    // Four people will fall, so update status 4 times
-    [[mockGamePhaseCallback expect] updateStatus];
-    [[mockGamePhaseCallback expect] updateStatus];
-    [[mockGamePhaseCallback expect] updateStatus];
-    [[mockGamePhaseCallback expect] updateStatus];
     [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseDay info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
         STAssertNotNil(info[@"Prompt"], @"!!!");
         STAssertTrue(info[@"Prompt"] > 0, @"WTF");
@@ -259,7 +259,31 @@ WerewolfGame *game;
     }]];
     [game next];
     [mockGamePhaseCallback verify];
+    
+    // Four people will fall, so update status 4 times
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary1 info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg checkWithBlock:^BOOL(WerewolfPlayer *deadPlayer) {
+        NSLog(@"Dead: %@", deadPlayer);
+        return YES;
+    }]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg checkWithBlock:^BOOL(WerewolfPlayer *deadPlayer) {
+        NSLog(@"Dead: %@", deadPlayer);
+        return YES;
+    }]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg checkWithBlock:^BOOL(WerewolfPlayer *deadPlayer) {
+        NSLog(@"Dead: %@", deadPlayer);
+        return YES;
+    }]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg checkWithBlock:^BOOL(WerewolfPlayer *deadPlayer) {
+        NSLog(@"Dead: %@", deadPlayer);
+        return YES;
+    }]];
+    NSLog(@"Death updated");
+    [game next];
+    [mockGamePhaseCallback verify];
     NSLog(@"%@", game);
+
+    NSLog(@"Summary 1 ended");
     
     [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseVote info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
         STAssertNotNil(info[@"Prompt"], @"!!!");
@@ -273,16 +297,144 @@ WerewolfGame *game;
     [game votePlayer:game[@"Lulu"]];
 
     [[mockGamePhaseCallback expect] hunterChooseTarget];
-    [[mockGamePhaseCallback expect] updateStatus];
-    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary2 info:[OCMArg any]];
     [game next];
     [mockGamePhaseCallback verify];
     
-    [[mockGamePhaseCallback expect] updateStatus];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
     [[mockGamePhaseCallback expect] victory:WerewolfGameVictoryHuman];
     [game hunterShootPlayer:game[@"Diao Jilao"]];
     [mockGamePhaseCallback verify];
     
+    STAssertEqualObjects(game.sheriff, game[@"Jenny"], @"Sheriff not right");
+    
     NSLog(@"%@", game);
+}
+
+- (void) testSimulateGamePros {
+    id mockGamePhaseCallback = [OCMockObject mockForProtocol:@protocol(WerewolfGameDelegate)];
+    game.delegate = mockGamePhaseCallback;
+    [game addPlayerWithName:@"Ben" character:WerewolfCharacterWerewolf];
+    [game addPlayerWithName:@"Ina" character:WerewolfCharacterSeer];
+    [game addPlayerWithName:@"ck~" character:WerewolfCharacterWitch];
+    [game addPlayerWithName:@"Jenny" character:WerewolfCharacterCupid];
+    [game addPlayerWithName:@"YK" character:WerewolfCharacterCivilian];
+    [game addPlayerWithName:@"Diao Jilao" character:WerewolfCharacterWerewolf];
+    [game addPlayerWithName:@"SMJ" character:WerewolfCharacterProstitute];
+    [game addPlayerWithName:@"Lulu" character:WerewolfCharacterHunter];
+    [game addPlayerWithName:@"Xin Song" character:WerewolfCharacterWerewolf];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSetLovers info:[OCMArg any]];
+    [game next];
+    STAssertEquals(game.phase, WerewolfGamePhaseSetLovers, nil);
+    [game setLover:game[@"Ben"] withLover:game[@"ck~"]];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseNight info:[OCMArg any]];
+    [game next];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhasePros info:[OCMArg any]];
+    [game next];
+    [game prostituteSleepWithPlayer:game[@"Ben"]];
+    STAssertEqualObjects(game[@"Ben"], game.playerSlept, nil);
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseWerewolf info:[OCMArg any]];
+    [game next];
+    [game werewolfKillPlayer:game[@"SMJ"]];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSeer info:[OCMArg any]];
+    [game next];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseWitch info:[OCMArg any]];
+    [game next];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseDay info:[OCMArg any]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary1 info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] electSheriff];
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [game electPlayerAsSheriff:game[@"Lulu"]];
+    // Day
+    STAssertEquals([game playerCountAlive:YES], 9U, nil);
+    STAssertTrue([game[@"SMJ"] isAlive], nil);
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseVote info:[OCMArg any]];
+    [game next];
+    [game votePlayer:game[@"ck~"]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
+    [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary2 info:[OCMArg any]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseNight info:[OCMArg any]];
+    [game next];
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhasePros info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
+        STAssertNotNil(info[@"Prompt"], nil);
+        if (!info[@"Character"]) {
+            return NO;
+        }
+        return YES;
+    }]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseWerewolf info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
+        STAssertNotNil(info[@"Characters"], @"No werewolf!");
+        STAssertEquals(((NSArray *)info[@"Characters"]).count, 2U, @"Werewolf not 2");
+        return YES;
+    }]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    [game werewolfKillPlayer:game[@"Lulu"]];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSeer info:[OCMArg any]];
+    [game next];
+    [mockGamePhaseCallback verify];
+
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseWitch info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
+        NSLog(@"%@", info[@"Prompt"]);
+        STAssertNil(info[@"Character"], @"Witch is already killed");
+        return TRUE;
+    }]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseDay info:[OCMArg any]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary1 info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] updateDeaths:game[@"Lulu"]];
+    [[mockGamePhaseCallback expect] hunterChooseTarget];
+    [[mockGamePhaseCallback expect] electSheriff];
+    
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseVote info:[OCMArg any]];
+    [game next];
+    [game votePlayer:game[@"Diao Jilao"]];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary2 info:[OCMArg any]];
+    [[mockGamePhaseCallback expect] updateDeaths:game[@"Diao Jilao"]];
+    [game next];
+    [mockGamePhaseCallback verify];
+
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseNight info:[OCMArg any]];
+    [game next];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhasePros info:[OCMArg any]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    [game prostituteSleepWithPlayer:game[@"Ina"]];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseWerewolf info:[OCMArg any]];
+    [game next];
+    [mockGamePhaseCallback verify];
+    
+    [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSeer info:[OCMArg checkWithBlock:^BOOL(NSDictionary *info) {
+        STAssertNotNil(info[@"Prompt"], nil);
+        NSLog(@"%@", info[@"Prompt"]);
+        return YES;
+    }]];
+    [game next];
+    [mockGamePhaseCallback verify];
 }
 @end
