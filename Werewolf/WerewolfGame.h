@@ -33,7 +33,7 @@ typedef enum {
 - (void) victory:(WerewolfGameVictory)victory;
 - (void) gamePhase:(WerewolfGamePhase)phase info:(NSDictionary *)info;
 - (void) electSheriff;
-- (void) hunterChooseTarget;
+- (void) huntsmanChooseTarget;
 - (void) updateDeaths:(WerewolfPlayer *)deadPlayer;
 @end
 
@@ -71,7 +71,7 @@ typedef enum {
 // Player voted to be exectuted
 @property (nonatomic, weak) WerewolfPlayer *playerVoted;
 
-// Player targeted by hunter
+// Player targeted by huntsman
 @property (nonatomic, weak) WerewolfPlayer *playerShot;
 
 // Indicate whether witch's potion (that saves player) is used.
@@ -85,7 +85,7 @@ typedef enum {
 // However, he can be easily poisoned to death by witch.
 @property (nonatomic, getter = isShieldPresent) BOOL shieldPresent;
 
-@property (nonatomic) BOOL hunterShootingMode;
+@property (nonatomic) BOOL huntsmanShootingMode;
 @property (nonatomic) BOOL electSheriffMode;
 
 /**
@@ -241,7 +241,7 @@ typedef enum {
 
 - (void) prostituteSleepWithPlayer:(WerewolfPlayer *)player;
 
-- (void) hunterShootPlayer:(WerewolfPlayer *)player;
+- (void) huntsmanShootPlayer:(WerewolfPlayer *)player;
 
 - (void) electPlayerAsSheriff:(WerewolfPlayer *)player;
 

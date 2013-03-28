@@ -18,8 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *civCountLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *elderSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *prosSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *hunterSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *cupidSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *huntsmanSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *AmorSwitch;
 @property (weak, nonatomic) IBOutlet UIStepper *werewolfStepper;
 @property (weak, nonatomic) IBOutlet UIStepper *civStepper;
 

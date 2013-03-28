@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    WerewolfCharacterUndefined, WerewolfCharacterWerewolf, WerewolfCharacterCivilian, WerewolfCharacterWitch, WerewolfCharacterSeer, WerewolfCharacterHunter, WerewolfCharacterLittleGirl, WerewolfCharacterGuard, WerewolfCharacterCupid, WerewolfCharacterProstitute, WerewolfCharacterScapegoat, WerewolfCharacterFool, WerewolfCharacterElder
+    WerewolfCharacterUndefined, WerewolfCharacterWerewolf, WerewolfCharacterCivilian, WerewolfCharacterWitch, WerewolfCharacterSeer, WerewolfCharacterHuntsman, WerewolfCharacterLittleGirl, WerewolfCharacterGuard, WerewolfCharacterAmor, WerewolfCharacterProstitute, WerewolfCharacterScapegoat, WerewolfCharacterFool, WerewolfCharacterElder
 } WerewolfCharacter;
 
 typedef struct {

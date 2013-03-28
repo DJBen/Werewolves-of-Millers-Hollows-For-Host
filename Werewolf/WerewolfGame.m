@@ -18,7 +18,7 @@
         _players = [[NSMutableArray alloc] init];
         _phase = WerewolfGamePhaseSettings;
         _shieldPresent = YES;
-        _hunterShootingMode = NO;
+        _huntsmanShootingMode = NO;
         _electSheriffMode = NO;
     }
     return self;
@@ -157,7 +157,7 @@
         case WerewolfGamePhaseSeer:
             return @"Seer's Turn";
         case WerewolfGamePhaseSetLovers:
-            return @"Cupid's Turn";
+            return @"Amor's Turn";
         case WerewolfGamePhaseSettings:
             return @"Game Settings";
         case WerewolfGamePhaseSummary1:
@@ -253,7 +253,7 @@
             return YES;
         case WerewolfGamePhaseSummary1:
         case WerewolfGamePhaseSummary2:
-            if (_electSheriffMode || _hunterShootingMode) {
+            if (_electSheriffMode || _huntsmanShootingMode) {
                 return YES;
             }
             break;
@@ -288,7 +288,7 @@
         case WerewolfGamePhaseSummary2:
             if (_electSheriffMode) {
                 return NSMakeRange(1, 1);
-            } else if (_hunterShootingMode) {
+            } else if (_huntsmanShootingMode) {
                 return NSMakeRange(0, 1);
             }
         default:
@@ -330,7 +330,7 @@
     
     switch (self.phase) {
         case WerewolfGamePhaseSetLovers:
-            info = @{@"Prompt" : @"Cupid, please set two lovers."};
+            info = @{@"Prompt" : @"Amor, please set two lovers."};
             self.gameStarted = YES;
             self.round = 1;
             break;
@@ -456,10 +456,10 @@
     player.damageSource = WerewolfCharacterCivilian;
 }
 
-- (void) hunterShootPlayer:(WerewolfPlayer *)player {
+- (void) huntsmanShootPlayer:(WerewolfPlayer *)player {
     self.playerShot = player;
-    player.damageSource = WerewolfCharacterHunter;
-    _hunterShootingMode = NO;
+    player.damageSource = WerewolfCharacterHuntsman;
+    _huntsmanShootingMode = NO;
     [self summary:self.phase];
 }
 
@@ -522,7 +522,7 @@
     for (WerewolfPlayer *player in deathRow) {
         if (player.lover && ![player.lover isEqualToWerewolfPlayer:self.playerSaved]) {
             [newDeathRow addObject:player.lover];
-            player.lover.damageSource = WerewolfCharacterCupid;
+            player.lover.damageSource = WerewolfCharacterAmor;
             break;
         }
     }
@@ -546,11 +546,11 @@
         [deathRow addObject:self.sheriff];
     }
     
-    // Process hunter last
-    WerewolfPlayer *hunter = [self playerWithCharacter:WerewolfCharacterHunter mustAlive:YES];
-    if (hunter && [deathRow indexOfObject:hunter] != NSNotFound) {
-        [deathRow removeObject:hunter];
-        [deathRow addObject:hunter];
+    // Process huntsman last
+    WerewolfPlayer *huntsman = [self playerWithCharacter:WerewolfCharacterHuntsman mustAlive:YES];
+    if (huntsman && [deathRow indexOfObject:huntsman] != NSNotFound) {
+        [deathRow removeObject:huntsman];
+        [deathRow addObject:huntsman];
     }
     
     for (WerewolfPlayer *player in deathRow) {
@@ -577,9 +577,9 @@
         [self.delegate electSheriff];
     }
     
-    if (player.character == WerewolfCharacterHunter) {
-        _hunterShootingMode = YES;
-        [self.delegate hunterChooseTarget];
+    if (player.character == WerewolfCharacterHuntsman) {
+        _huntsmanShootingMode = YES;
+        [self.delegate huntsmanChooseTarget];
     }
     
     [self checkVictory];

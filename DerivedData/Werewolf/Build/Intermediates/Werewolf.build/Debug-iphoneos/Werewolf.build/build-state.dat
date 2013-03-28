@@ -2,6 +2,7 @@ TWerewolf
 v5
 r1
 cCheck dependencies
+<<<<<<< HEAD
 cProcessInfoPlistFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist Werewolf/Werewolf-Info.plist
 cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
 cProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -28,6 +29,34 @@ cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/B
 cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
 cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png Werewolf/Default@2x.png
 cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.png
+=======
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist Werewolf/Werewolf-Info.plist
+cProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7s
+cGenerateDSYMFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
+cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png Werewolf/Default.png
+cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png Werewolf/Default@2x.png
+cCopyStringsFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings Werewolf/en.lproj/InfoPlist.strings
+cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png Werewolf/Default-568h@2x.png
+cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard
+cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
+cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.png
+cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png Werewolf/background.png
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png Werewolf/Circle.png
 cProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
 cProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
@@ -167,24 +196,39 @@ t1364330511
 s101444
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o
+<<<<<<< HEAD
 t1364336474
 s153100
+=======
+t1364342949
+s155808
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o
 t1364325297
 s193604
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o
+<<<<<<< HEAD
 t1364330511
 s109128
+=======
+t1364342949
+s109552
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o
 t1364330511
 s109008
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o
+<<<<<<< HEAD
 t2
 s0
+=======
+t1364342948
+s73552
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/Werewolf.LinkFileList
 c000000005152389D00000000000008C9
@@ -212,11 +256,19 @@ t1364325309
 s410
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
+<<<<<<< HEAD
 t1364338444
 s510
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM
 t1364338429
+=======
+t1364342954
+s510
+
+N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM
+t1364342951
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 s102
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png
@@ -248,8 +300,13 @@ t1364325295
 s485
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
+<<<<<<< HEAD
 t1364338444
 s387120
+=======
+t1364342954
+s389472
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png
 t1364325301
@@ -268,7 +325,11 @@ t1364325307
 s170
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/MainStoryboard_iPhone.storyboardc
+<<<<<<< HEAD
 t1364326157
+=======
+t1364342954
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 s476
 
 N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png
@@ -375,6 +436,14 @@ c0000000051481EE00000000000001A34
 t1363680992
 s6708
 
+<<<<<<< HEAD
+=======
+N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.h
+c00000000515237CF000000000000016E
+t1364342735
+s366
+
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m
 c000000005152382A0000000000000493
 t1364342826
@@ -499,6 +568,7 @@ r0
 
 CCheck dependencies
 r0
+<<<<<<< HEAD
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese717111d7002b741^a4e2031e7002b741^---0#1#0#--18"Check dependencies36"12D47957-B42C-4988-B450-593CF454A8F6-
 
 CCodeSign /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
@@ -508,6 +578,18 @@ r1
 xCodeSign
 x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.appe674552a7002b741^1d94dc2a7002b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/0000000000000000^943"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app    cd /Users/DJBen/Documents/Developments/Werewolf    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 5bf055fc4a70c1a5dd8a46fa7e5292c800deb0d4 --resource-rules=/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist --entitlements /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"C933D440-BE2B-4C8A-9631-3AC2D7E7C71C-
+=======
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0a6985d0b402b741^a91635d1b402b741^---0#1#0#--18"Check dependencies36"381DF4FE-7C91-4CC0-B61D-AF532A2EC02F-
+
+CCodeSign /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
+s386053329.856462
+e386053330.534150
+r1
+xCodeSign
+x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
+o/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app: replacing existing signature
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app6955dbd1b402b741^98bd88d2b402b741^-138"/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/0000000000000000^943"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app    cd /Users/DJBen/Documents/Developments/Werewolf    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 5bf055fc4a70c1a5dd8a46fa7e5292c800deb0d4 --resource-rules=/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist --entitlements /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"B969DA0D-33AB-450B-B880-6475079AA0DD-
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 
 CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/ATSDragToReorderTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
@@ -806,13 +888,22 @@ xDerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.p
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Copy DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plistc3810c2f2b02b741^55c21f2f2b02b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist000000000080d041^800"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"F1C7F5DB-58B2-41C8-9B15-64793ED3F62B-
 
 CGenerateDSYMFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
+<<<<<<< HEAD
 s386035751.623254
 e386035751.823384
+=======
+s386053329.290065
+e386053329.805209
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 r1
 xGenerateDSYMFile
 x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM
 x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
+<<<<<<< HEAD
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM0fb79f277002b741^f7c8d2277002b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM/0000000000000000^734"GenerateDSYMFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM36"601E9341-63FB-48C6-AA3B-A3A4932422AA-
+=======
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM0fb555d1b402b741^2d22ced1b402b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM/0000000000000000^734"GenerateDSYMFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM36"0D65FCF6-3C8C-4D9F-825F-DFF5850C5DEB-
+>>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
 
 CLd /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7
 r0

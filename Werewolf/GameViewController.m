@@ -236,23 +236,23 @@
     [[[UIAlertView alloc] initWithTitle:@"Player is Dead" message:[NSString stringWithFormat:@"Player %@ is dead.", deadPlayer.name] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 }
 
-- (void) hunterChooseTarget {
-    NSLog(@"Hunter choose target evoked");
+- (void) huntsmanChooseTarget {
+    NSLog(@"huntsman choose target evoked");
     if (!tempInfo) tempInfo = [[NSMutableArray alloc] init];
     [tempInfo addObject:@{@"Prompt" : _announcementLabel.text, @"Phase" : _gamePhaseLabel.text, @"ButtonTarget" : [_nextPhaseButton actionsForTarget:self forControlEvent:UIControlEventTouchUpInside][0]}];
-    _announcementLabel.text = @"Hunter, please choose your target";
-    _gamePhaseLabel.text = @"Hunter's Turn";
+    _announcementLabel.text = @"huntsman, please choose your target";
+    _gamePhaseLabel.text = @"huntsman's Turn";
     [_nextPhaseButton removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
-    [_nextPhaseButton addTarget:self action:@selector(hunterChooseTargetNextButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_nextPhaseButton addTarget:self action:@selector(huntsmanChooseTargetNextButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     NSLog(@"%@", tempInfo);
     [self refresh];
 }
 
-- (void) hunterChooseTargetNextButtonClicked:(id)sender {
-    NSLog(@"Hunter mode clicked, %@", tempInfo);
+- (void) huntsmanChooseTargetNextButtonClicked:(id)sender {
+    NSLog(@"huntsman mode clicked, %@", tempInfo);
     if ([_game numberOfPlayersCanChoose].location <= chosenPlayers.count && [_game numberOfPlayersCanChoose].length >= chosenPlayers.count) {
         
-        [_game hunterShootPlayer:chosenPlayers[0]];
+        [_game huntsmanShootPlayer:chosenPlayers[0]];
         
         // Recover information;
         _announcementLabel.text = [tempInfo lastObject][@"Prompt"];

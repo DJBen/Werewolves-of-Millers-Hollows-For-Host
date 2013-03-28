@@ -44,16 +44,16 @@
             return @"Prostitute";
         case WerewolfCharacterCivilian:
             return @"Civilian";
-        case WerewolfCharacterCupid:
-            return @"Cupid";
+        case WerewolfCharacterAmor:
+            return @"Amor";
         case WerewolfCharacterElder:
             return @"Elder";
         case WerewolfCharacterFool:
             return @"Fool";
         case WerewolfCharacterGuard:
             return @"Guard";
-        case WerewolfCharacterHunter:
-            return @"Hunter";
+        case WerewolfCharacterHuntsman:
+            return @"huntsman";
         case WerewolfCharacterLittleGirl:
             return @"Little Girl";
         case WerewolfCharacterScapegoat:

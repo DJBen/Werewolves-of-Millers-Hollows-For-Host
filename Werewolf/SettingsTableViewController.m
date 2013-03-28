@@ -33,9 +33,9 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     _werewolfStepper.value = [defaults doubleForKey:@"WerewolfCount"];
     _civStepper.value = [defaults doubleForKey:@"CivCount"];
-    _hunterSwitch.on = [defaults boolForKey:@"HunterEnabled"];
+    _huntsmanSwitch.on = [defaults boolForKey:@"huntsmanEnabled"];
     _prosSwitch.on = [defaults boolForKey:@"ProsEnabled"];
-    _cupidSwitch.on = [defaults boolForKey:@"CupidEnabled"];
+    _AmorSwitch.on = [defaults boolForKey:@"AmorEnabled"];
     _elderSwitch.on = [defaults boolForKey:@"ElderEnabled"];
     [_werewolfCountLabel setText:[NSString stringWithFormat:@"%d", (int)_werewolfStepper.value]];
     [_civCountLabel setText:[NSString stringWithFormat:@"%d", (int)_civStepper.value]];
@@ -161,8 +161,8 @@
         [characters addObject:@(WerewolfCharacterCivilian)];
     }
     
-    if ([_cupidSwitch isOn]) [characters addObject:@(WerewolfCharacterCupid)];
-    if ([_hunterSwitch isOn]) [characters addObject:@(WerewolfCharacterHunter)];
+    if ([_AmorSwitch isOn]) [characters addObject:@(WerewolfCharacterAmor)];
+    if ([_huntsmanSwitch isOn]) [characters addObject:@(WerewolfCharacterHuntsman)];
     if ([_prosSwitch isOn]) [characters addObject:@(WerewolfCharacterProstitute)];
     if ([_elderSwitch isOn]) [characters addObject:@(WerewolfCharacterElder)];
     
@@ -184,8 +184,8 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setDouble:_werewolfStepper.value forKey:@"WerewolfCount"];
     [defaults setDouble:_civStepper.value forKey:@"CivCount"];
-    [defaults setBool:_cupidSwitch.isOn forKey:@"CupidEnabled"];
-    [defaults setBool:_hunterSwitch.isOn forKey:@"HunterEnabled"];
+    [defaults setBool:_AmorSwitch.isOn forKey:@"AmorEnabled"];
+    [defaults setBool:_huntsmanSwitch.isOn forKey:@"huntsmanEnabled"];
     [defaults setBool:_prosSwitch.isOn forKey:@"ProsEnabled"];
     [defaults setBool:_elderSwitch.isOn forKey:@"ElderEnabled"];
     [defaults synchronize];

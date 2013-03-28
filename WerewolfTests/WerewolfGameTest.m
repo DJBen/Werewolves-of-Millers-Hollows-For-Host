@@ -30,7 +30,7 @@ WerewolfGame *game;
     WerewolfPlayer *player1 = [[WerewolfPlayer alloc] initWithName:@"Nuke"];
     WerewolfPlayer *player2 = [[WerewolfPlayer alloc] initWithName:@"Ghost"];
     WerewolfPlayer *player3 = [[WerewolfPlayer alloc] initWithName:@"Nuke"];
-    player3.character = WerewolfCharacterCupid;
+    player3.character = WerewolfCharacterAmor;
     STAssertFalse([player1 isEqual:nil], nil);
     STAssertFalse([player2 isEqual:player1], nil);
     STAssertEqualObjects(player1, player3, @"Player equality failed");
@@ -64,11 +64,11 @@ WerewolfGame *game;
     [game addPlayerWithName:@"Ben" character:WerewolfCharacterWerewolf];
     [game addPlayerWithName:@"Ina" character:WerewolfCharacterSeer];
     [game addPlayerWithName:@"ck~" character:WerewolfCharacterWitch];
-    [game addPlayerWithName:@"Jenny" character:WerewolfCharacterCupid];
+    [game addPlayerWithName:@"Jenny" character:WerewolfCharacterAmor];
     [game addPlayerWithName:@"YK" character:WerewolfCharacterCivilian];
     [game addPlayerWithName:@"Diao Jilao" character:WerewolfCharacterWerewolf];
     [game addPlayerWithName:@"SMJ" character:WerewolfCharacterProstitute];
-    [game addPlayerWithName:@"Lulu" character:WerewolfCharacterHunter];
+    [game addPlayerWithName:@"Lulu" character:WerewolfCharacterHuntsman];
     [game addPlayerWithName:@"Xin Song" character:WerewolfCharacterWerewolf];
     STAssertEquals(game.round, 0U, nil);
     STAssertEquals(game.playerCount, 9U, @"Math too bad");
@@ -189,7 +189,7 @@ WerewolfGame *game;
     
     /*
      * What happened in this test?
-     * Ina - Seer, ck - witch, Jenny - Cupid, YK - Civ, SMJ - Pros, Lulu - Hunter,
+     * Ina - Seer, ck - witch, Jenny - Amor, YK - Civ, SMJ - Pros, Lulu - huntsman,
      * Ben, Xin Song and Diao Jilao - Werewolves
      * Lovers - Xin Song and ck
      * Jenny is elected as sheriff
@@ -296,7 +296,7 @@ WerewolfGame *game;
     
     [game votePlayer:game[@"Lulu"]];
 
-    [[mockGamePhaseCallback expect] hunterChooseTarget];
+    [[mockGamePhaseCallback expect] huntsmanChooseTarget];
     [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
     [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary2 info:[OCMArg any]];
     [game next];
@@ -304,7 +304,7 @@ WerewolfGame *game;
     
     [[mockGamePhaseCallback expect] updateDeaths:[OCMArg any]];
     [[mockGamePhaseCallback expect] victory:WerewolfGameVictoryHuman];
-    [game hunterShootPlayer:game[@"Diao Jilao"]];
+    [game huntsmanShootPlayer:game[@"Diao Jilao"]];
     [mockGamePhaseCallback verify];
     
     STAssertEqualObjects(game.sheriff, game[@"Jenny"], @"Sheriff not right");
@@ -318,11 +318,11 @@ WerewolfGame *game;
     [game addPlayerWithName:@"Ben" character:WerewolfCharacterWerewolf];
     [game addPlayerWithName:@"Ina" character:WerewolfCharacterSeer];
     [game addPlayerWithName:@"ck~" character:WerewolfCharacterWitch];
-    [game addPlayerWithName:@"Jenny" character:WerewolfCharacterCupid];
+    [game addPlayerWithName:@"Jenny" character:WerewolfCharacterAmor];
     [game addPlayerWithName:@"YK" character:WerewolfCharacterCivilian];
     [game addPlayerWithName:@"Diao Jilao" character:WerewolfCharacterWerewolf];
     [game addPlayerWithName:@"SMJ" character:WerewolfCharacterProstitute];
-    [game addPlayerWithName:@"Lulu" character:WerewolfCharacterHunter];
+    [game addPlayerWithName:@"Lulu" character:WerewolfCharacterHuntsman];
     [game addPlayerWithName:@"Xin Song" character:WerewolfCharacterWerewolf];
     [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSetLovers info:[OCMArg any]];
     [game next];
@@ -401,7 +401,7 @@ WerewolfGame *game;
     
     [[mockGamePhaseCallback expect] gamePhase:WerewolfGamePhaseSummary1 info:[OCMArg any]];
     [[mockGamePhaseCallback expect] updateDeaths:game[@"Lulu"]];
-    [[mockGamePhaseCallback expect] hunterChooseTarget];
+    [[mockGamePhaseCallback expect] huntsmanChooseTarget];
     [[mockGamePhaseCallback expect] electSheriff];
     
     [game next];
