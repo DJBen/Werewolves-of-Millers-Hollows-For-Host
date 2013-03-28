@@ -11,7 +11,7 @@ Automatically assign characters to players according to settings. In a screen, e
 
 Help the game host figure out all what happened and ensure him/her make no error!
 
-Basic Game Rules (from GameWiki (http://www.games-wiki.org/wiki/Werewolves_of_Millers_Hollow/))
+Basic Game Rules (from [GameWiki](http://www.games-wiki.org/wiki/Werewolves_of_Millers_Hollow/))
 ----------------
 Each player gets a card. He takes a look (and remembers) the symbol and thus his role in the game, and then hides the card. Each player represents a citizen of a village; most of whom are normal "citizen", some have a special role ("seer", "witch", "Amor", "huntsman", etc.), and a few are werewolves. All roles are "good" (pro citizen), only the werewolves are villain.
 One referee moderates the game (he cannot take part as he knows many of the secrets of the village). Two phases alternate, the phases of night and day. During night, all players have their eyes closed - except those "woken up" by the referee. It is important that nobody cheats during the night! During day, everybody has his eyes open and try to identify the werewolves.
