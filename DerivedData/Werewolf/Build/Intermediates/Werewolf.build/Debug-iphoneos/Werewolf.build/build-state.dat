@@ -1,977 +1,0 @@
-TWerewolf
-v5
-r1
-cCheck dependencies
-<<<<<<< HEAD
-cProcessInfoPlistFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist Werewolf/Werewolf-Info.plist
-cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
-cProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7s
-cGenerateDSYMFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
-cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard
-cCopyStringsFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings Werewolf/en.lproj/InfoPlist.strings
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png Werewolf/Default-568h@2x.png
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png Werewolf/Default.png
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png Werewolf/background.png
-cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png Werewolf/Default@2x.png
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.png
-=======
-cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
-cProcessInfoPlistFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist Werewolf/Werewolf-Info.plist
-cProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7s
-cGenerateDSYMFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png Werewolf/Default.png
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png Werewolf/Default@2x.png
-cCopyStringsFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings Werewolf/en.lproj/InfoPlist.strings
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png Werewolf/Default-568h@2x.png
-cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard
-cCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.png
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png Werewolf/background.png
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-cCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png Werewolf/Circle.png
-cProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
-cProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
-cTouch /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent
-cCodeSign /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
-c000000005143803D0000000000000110
-t1363378237
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
-c0000000051072EEF00000000000001A7
-t1359425263
-s423
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
-c0000000051072EEF00000000000001E5
-t1359425263
-s485
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c0000000051072EF10000000000322700
-t1359425265
-s3286784
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c0000000051072EF2000000000062AD10
-t1359425266
-s6466832
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c0000000051072EF200000000000015F7
-t1359425266
-s5623
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c0000000051072EF400000000003596B0
-t1359425268
-s3511984
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c0000000051072EF40000000000000E8D
-t1359425268
-s3725
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c0000000051072EF500000000011BCDF0
-t1359425269
-s18599408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
-c0000000051072EFB0000000000001B73
-t1359425275
-s7027
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth
-t1364325296
-s4606992
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-fkpnmrtodmijbqgkwatcyrrmvqra/Werewolf-Prefix.pch.pth
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/ATSDragToReorderTableViewController.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/AppDelegate.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/CharacterSubView.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/CharacterViewController.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/GameViewController.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/MBProgressHUD.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/PrepViewController.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/SettingsTableViewController.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/VictoryViewController.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/Werewolf.LinkFileList
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/WerewolfGame.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/WerewolfPlayer.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/iCarousel.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/main.o
-t2
-s0
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o
-t1364325297
-s185584
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o
-t1364325297
-s85816
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o
-t1364325297
-s88560
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o
-t1364330511
-s101444
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o
-<<<<<<< HEAD
-t1364336474
-s153100
-=======
-t1364342949
-s155808
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o
-t1364325297
-s193604
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o
-<<<<<<< HEAD
-t1364330511
-s109128
-=======
-t1364342949
-s109552
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o
-t1364330511
-s109008
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o
-<<<<<<< HEAD
-t2
-s0
-=======
-t1364342948
-s73552
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/Werewolf.LinkFileList
-c000000005152389D00000000000008C9
-t1364342941
-s2249
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o
-t1364336750
-s109308
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o
-t1364325297
-s30984
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o
-t1364325297
-s261388
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o
-t1364325297
-s3404
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent
-t1364325309
-s410
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-<<<<<<< HEAD
-t1364338444
-s510
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM
-t1364338429
-=======
-t1364342954
-s510
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM
-t1364342951
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-s102
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png
-t1364325301
-s43200
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png
-t1364325301
-s7014
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png
-t1364325301
-s3688
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png
-t1364325301
-s6316
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist
-t1364325295
-s1159
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/PkgInfo
-t1364325295
-s8
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
-t1364325295
-s485
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
-<<<<<<< HEAD
-t1364338444
-s387120
-=======
-t1364342954
-s389472
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png
-t1364325301
-s7127
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
-t1364325309
-s7997
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings
-t1364325299
-s42
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/MainStoryboard_iPad.storyboardc
-t1364325307
-s170
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/MainStoryboard_iPhone.storyboardc
-<<<<<<< HEAD
-t1364326157
-=======
-t1364342954
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-s476
-
-N/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png
-t1364325301
-s7808
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.h
-c00000000513EA3BF0000000000000110
-t1363059647
-s272
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m
-c00000000513EA3BF00000000000007D2
-t1363059647
-s2002
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.h
-c000000005148D601000000000000024F
-t1363727873
-s591
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m
-c000000005148D82A0000000000000A42
-t1363728426
-s2626
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.h
-c0000000051489DDB00000000000002C6
-t1363713499
-s710
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m
-c000000005148E8AF0000000000001613
-t1363732655
-s5651
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Circle.png
-c000000005148D45A0000000000017613
-t1363727450
-s95763
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default-568h@2x.png
-c000000005062328600000000000048A2
-t1348612742
-s18594
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default.png
-c0000000050623286000000000000198C
-t1348612742
-s6540
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default@2x.png
-c00000000506232860000000000003EEB
-t1348612742
-s16107
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.h
-c000000005151F753000000000000042F
-t1364326227
-s1071
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m
-c000000005152376B00000000000034F6
-t1364342635
-s13558
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.h
-c0000000051488C990000000000003D20
-t1363709081
-s15648
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m
-c0000000051488C9900000000000067F2
-t1363709081
-s26610
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.h
-c000000005152356500000000000001FE
-t1364342117
-s510
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m
-c00000000515234100000000000001560
-t1364341776
-s5472
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.h
-c000000005148A2680000000000001B61
-t1363714664
-s7009
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m
-c000000005148A268000000000000CDBD
-t1363714664
-s52669
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.h
-c0000000051480E0200000000000003BC
-t1363676674
-s956
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m
-c0000000051481EE00000000000001A34
-t1363680992
-s6708
-
-<<<<<<< HEAD
-=======
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.h
-c00000000515237CF000000000000016E
-t1364342735
-s366
-
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m
-c000000005152382A0000000000000493
-t1364342826
-s1171
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Werewolf-Prefix.pch
-c00000000513EA3BF000000000000013F
-t1363059647
-s319
-i<Availability.h>
-i<UIKit/UIKit.h>
-i<Foundation/Foundation.h>
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.h
-c00000000515207D80000000000001B79
-t1364330456
-s7033
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m
-c000000005152206B0000000000005501
-t1364336747
-s21761
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.h
-c000000005148C1DB0000000000000507
-t1363722715
-s1287
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m
-c00000000514812700000000000000E0C
-t1363677808
-s3596
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/background.png
-c0000000050C669D20000000000001A05
-t1355180498
-s6661
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/InfoPlist.strings
-c00000000513EA3BF000000000000002D
-t1363059647
-s45
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
-c00000000513EA3C0000000000000061D
-t1363059648
-s1565
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard
-c00000000515237CC0000000000010956
-t1364342732
-s67926
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.h
-c000000005147B5BE0000000000002324
-t1363654078
-s8996
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m
-c000000005147B5BE000000000001164F
-t1363654078
-s71247
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m
-c00000000513EA3BF000000000000014B
-t1363059647
-s331
-
-N/Users/DJBen/Documents/Developments/Werewolf/Werewolf/page.png
-c0000000050C669D20000000000001DCE
-t1355180498
-s7630
-
-N/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision
-c0000000051061F720000000000001F3D
-t1359355762
-s7997
-
-NWerewolf/Werewolf-Info.plist
-c00000000513ECB7300000000000005A5
-t1363069811
-s1445
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m
-r0
-
-CBuild AST from /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m
-r0
-
-CCheck dependencies
-r0
-<<<<<<< HEAD
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese717111d7002b741^a4e2031e7002b741^---0#1#0#--18"Check dependencies36"12D47957-B42C-4988-B450-593CF454A8F6-
-
-CCodeSign /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-s386035754.333471
-e386035754.861636
-r1
-xCodeSign
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.appe674552a7002b741^1d94dc2a7002b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/0000000000000000^943"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app    cd /Users/DJBen/Documents/Developments/Werewolf    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 5bf055fc4a70c1a5dd8a46fa7e5292c800deb0d4 --resource-rules=/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist --entitlements /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"C933D440-BE2B-4C8A-9631-3AC2D7E7C71C-
-=======
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0a6985d0b402b741^a91635d1b402b741^---0#1#0#--18"Check dependencies36"381DF4FE-7C91-4CC0-B61D-AF532A2EC02F-
-
-CCodeSign /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-s386053329.856462
-e386053330.534150
-r1
-xCodeSign
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-o/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app: replacing existing signature
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app6955dbd1b402b741^98bd88d2b402b741^-138"/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/0000000000000000^943"CodeSign DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app    cd /Users/DJBen/Documents/Developments/Werewolf    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 5bf055fc4a70c1a5dd8a46fa7e5292c800deb0d4 --resource-rules=/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist --entitlements /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"B969DA0D-33AB-450B-B880-6475079AA0DD-
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/ATSDragToReorderTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/AppDelegate.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/CharacterSubView.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/CharacterViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/GameViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/MBProgressHUD.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/PrepViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/SettingsTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/VictoryViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/WerewolfGame.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/WerewolfPlayer.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/iCarousel.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7/main.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.552187
-e386018097.813212
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m51878d312b02b741^552ed0312b02b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m0000000000000000^3978"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/ReorderingTableView/ATSDragToReorderTableViewController.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/ATSDragToReorderTableViewController.o36"3D7F6031-730C-4D47-A5D6-AE4A7C2CA662-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.094436
-e386018097.618147
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m6e6a18312b02b741^3a3e9e312b02b741^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m0000000000000000^3794"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o Werewolf/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/AppDelegate.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/AppDelegate.o36"8CD00E0A-AE06-4D7A-9FA6-A6775EB703C4-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.550132
-e386018097.676989
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m08018d312b02b741^4b3fb5312b02b741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m0000000000000000^3824"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o Werewolf/CharacterSubView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterSubView.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterSubView.o36"1E682C0A-8366-41D8-A096-E104BF706CE3-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386023310.940890
-e386023311.701114
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.mc6f8f08e3f02b741^e17bb38f3f02b741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m0000000000000000^3866"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o Werewolf/CharacterViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/CharacterViewController.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/CharacterViewController.o36"0EA8ED19-E14E-44CC-95C4-F93EB158C116-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386035742.075014
-e386035749.754651
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m508c141e7002b741^412ec1257002b741^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m0000000000000000^3836"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o Werewolf/GameViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/GameViewController.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/GameViewController.o36"18AEDEC9-07F9-4754-AB1C-D25CDF282D00-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.537837
-e386018097.783215
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m95d489312b02b741^9580c8312b02b741^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m0000000000000000^3834"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o Werewolf/MBProgressHUD/MBProgressHUD.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/MBProgressHUD/MBProgressHUD.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/MBProgressHUD.o36"46F5A1A9-5AE9-4047-99FA-28E2AF4051A6-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386035742.074776
-e386035749.754075
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.ma88f141e7002b741^7d09c1257002b741^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m0000000000000000^3836"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o Werewolf/PrepViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/PrepViewController.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/PrepViewController.o36"385FA08B-E1AD-43D7-AF9C-038B4B259551-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386023310.939624
-e386023311.754638
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m9ab5f08e3f02b741^6f2fc18f3f02b741^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m0000000000000000^3890"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o Werewolf/SettingsTableViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/SettingsTableViewController.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/SettingsTableViewController.o36"174AA736-9929-44A2-97EC-7F59A23F2379-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386035742.081692
-e386035748.812540
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.mae0d151e7002b741^8201d0247002b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m0000000000000000^3854"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o Werewolf/VictoryViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/VictoryViewController.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/VictoryViewController.o36"B7A6CFAB-3F32-40A9-9C4A-07FE6F3D3803-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386029549.490527
-e386029550.249173
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m9ab47ded5702b741^2ecb3fee5702b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m0000000000000000^3800"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o Werewolf/WerewolfGame.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfGame.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfGame.o36"C96CA549-2E0E-41B8-ABB0-784D891ED4BE-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.094566
-e386018097.536356
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m867418312b02b741^eb5489312b02b741^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m0000000000000000^3812"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o Werewolf/WerewolfPlayer.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/WerewolfPlayer.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/WerewolfPlayer.o36"03341209-476C-4D76-9053-3CA0DFC69C5C-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.094713
-e386018097.781906
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.mf98418312b02b741^562ac8312b02b741^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m0000000000000000^3802"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o Werewolf/iCarousel/iCarousel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/iCarousel/iCarousel.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/iCarousel.o36"890BE957-8C33-4AD5-893C-FCBDCC8127A2-
-
-CCompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018097.094411
-e386018097.537261
-r1
-xCompileC
-xDerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m205d18312b02b741^c28889312b02b741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m0000000000000000^3752"CompileC DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o Werewolf/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -include /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/main.m -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/main.o36"5C315BB3-AC0A-4FF5-A9CA-4A96F7F4029B-
-
-CCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
-s386018099.318193
-e386018107.812727
-r1
-xCompileStoryboard
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"CompileStoryboard Werewolf/en.lproj/MainStoryboard_iPad.storyboardcc9951332b02b741^1f10d03b2b02b741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard0000000000000000^937"CompileStoryboard Werewolf/en.lproj/MainStoryboard_iPad.storyboard    cd /Users/DJBen/Documents/Developments/Werewolf    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/MainStoryboard_iPad.storyboardc /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPad.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"6ABCD985-63D0-43FA-BCB4-81052AF81E3F-
-
-CCompileStoryboard /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard
-s386035751.831770
-e386035754.239755
-r1
-xCompileStoryboard
-x/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"CompileStoryboard Werewolf/en.lproj/MainStoryboard_iPhone.storyboardb517d5277002b741^95643d2a7002b741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^943"CompileStoryboard Werewolf/en.lproj/MainStoryboard_iPhone.storyboard    cd /Users/DJBen/Documents/Developments/Werewolf    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/MainStoryboard_iPhone.storyboardc /Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/MainStoryboard_iPhone.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"2E11A22E-12FE-4BC5-B874-A567DC4FB6AA-
-
-CCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png Werewolf/Circle.png
-s386018101.249243
-e386018101.386028
-r1
-xCopyPNGFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png
-xWerewolf/Circle.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png Werewolf/Circle.png47e43f352b02b741^24d262352b02b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Circle.png0000000000000000^646"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png Werewolf/Circle.png    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/DJBen/Documents/Developments/Werewolf/Werewolf/Circle.png /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Circle.png36"9C9CA866-DCCA-47E8-8B6E-7B3E81E7428A-
-
-CCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png Werewolf/Default-568h@2x.png
-s386018099.318140
-e386018101.274192
-r1
-xCopyPNGFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png
-xWerewolf/Default-568h@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png Werewolf/Default-568h@2x.pngc89651332b02b741^ec3046352b02b741^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default-568h@2x.png0000000000000000^690"CopyPNGFile "DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png" "Werewolf/Default-568h@2x.png"    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default-568h@2x.png" "/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default-568h@2x.png"36"19A5A2B5-339C-4186-8FFF-D3BA9517D535-
-
-CCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png Werewolf/Default.png
-s386018099.318041
-e386018101.226010
-r1
-xCopyPNGFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png
-xWerewolf/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png Werewolf/Default.pngec8a51332b02b741^dbdb39352b02b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default.png0000000000000000^650"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png Werewolf/Default.png    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default.png /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default.png36"66D0CDB2-E608-4A11-934C-ABE7444F5AFA-
-
-CCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png Werewolf/Default@2x.png
-s386018099.318118
-e386018101.247846
-r1
-xCopyPNGFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png
-xWerewolf/Default@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png Werewolf/Default@2x.pngb89251332b02b741^e7723f352b02b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default@2x.png0000000000000000^670"CopyPNGFile "DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png" "Werewolf/Default@2x.png"    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Default@2x.png" "/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Default@2x.png"36"781490EB-8D7D-450E-BFE2-863C2A9D52E1-
-
-CCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png Werewolf/background.png
-s386018099.318199
-e386018101.226388
-r1
-xCopyPNGFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png
-xWerewolf/background.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png Werewolf/background.png21b151332b02b741^a5f339352b02b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/background.png0000000000000000^662"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png Werewolf/background.png    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/DJBen/Documents/Developments/Werewolf/Werewolf/background.png /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/background.png36"6D834FED-C5C0-4576-9313-A7E2FF26C150-
-
-CCopyPNGFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.png
-s386018099.318893
-e386018101.226685
-r1
-xCopyPNGFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png
-xWerewolf/page.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.pngdcb851332b02b741^29083a352b02b741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/page.png0000000000000000^638"CopyPNGFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png Werewolf/page.png    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/DJBen/Documents/Developments/Werewolf/Werewolf/page.png /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/page.png36"CA8F9AF8-F3DD-41F5-806D-DC3AD0AC3DB5-
-
-CCopyStringsFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings Werewolf/en.lproj/InfoPlist.strings
-s386018099.318066
-e386018099.536423
-r1
-xCopyStringsFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings
-xWerewolf/en.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy Werewolf/en.lproj/InfoPlist.stringsc68b51332b02b741^9c5389332b02b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/en.lproj/InfoPlist.strings0000000000000000^630"CopyStringsFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj/InfoPlist.strings Werewolf/en.lproj/InfoPlist.strings    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/en.lproj -- Werewolf/en.lproj/InfoPlist.strings36"37C04633-7200-49BE-BFEB-0CB0F9640601-
-
-CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
-s386018095.048623
-e386018095.124028
-r1
-xCpResource
-x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
-xDerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Copy DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plistc3810c2f2b02b741^55c21f2f2b02b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist000000000080d041^800"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"F1C7F5DB-58B2-41C8-9B15-64793ED3F62B-
-
-CGenerateDSYMFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
-<<<<<<< HEAD
-s386035751.623254
-e386035751.823384
-=======
-s386053329.290065
-e386053329.805209
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-r1
-xGenerateDSYMFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
-<<<<<<< HEAD
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM0fb79f277002b741^f7c8d2277002b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM/0000000000000000^734"GenerateDSYMFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM36"601E9341-63FB-48C6-AA3B-A3A4932422AA-
-=======
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM0fb555d1b402b741^2d22ced1b402b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM/0000000000000000^734"GenerateDSYMFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app.dSYM36"0D65FCF6-3C8C-4D9F-825F-DFF5850C5DEB-
->>>>>>> Renamed character name: Cupid -> Amor, Hunter -> Huntsman
-
-CLd /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7
-r0
-
-CLd /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7s
-s386035749.763016
-e386035751.616089
-r1
-xLd
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf
-xnormal
-xarmv7s
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Link /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf8046c5257002b741^12bc9d277002b741^---0#0#0#--1418"Ld DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf normal armv7s    cd /Users/DJBen/Documents/Developments/Werewolf    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -L/Users/DJBen/Documents/Developments/Werewolf -L/Users/DJBen/Documents/Developments/Werewolf/../../../Desktop -L/Users/DJBen/Documents/Developments/Werewolf/Werewolf -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos -filelist /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Objects-normal/armv7s/Werewolf.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.1 -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Werewolf36"61D3D719-CC61-49A0-A4DC-575A05880141-
-
-CProcessInfoPlistFile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist Werewolf/Werewolf-Info.plist
-s386018095.048587
-e386018095.083604
-r1
-xProcessInfoPlistFile
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist
-xWerewolf/Werewolf-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process Werewolf/Werewolf-Info.plistb2810c2f2b02b741^3068152f2b02b741^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Werewolf-Info.plist0000000000000000^878"ProcessInfoPlistFile DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist Werewolf/Werewolf-Info.plist    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Werewolf/Werewolf-Info.plist -genpkginfo /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/ResourceRules.plist -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/Info.plist36"6C97DF01-D582-4D3B-A88D-EE6AEC9C18E4-
-
-CProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386018095.132167
-e386018097.087171
-r1
-xProcessPCH
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth
-xWerewolf/Werewolf-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Werewolf/Werewolf-Prefix.pch5ff0212f2b02b741^1a5116312b02b741^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/DJBen/Documents/Developments/Werewolf/Werewolf/Werewolf-Prefix.pch0000000000000000^3660"ProcessPCH DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/DJBen/Documents/Developments/Werewolf    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-generated-files.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-own-target-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-all-target-headers.hmap -iquote /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf-project-headers.hmap -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources/armv7s -I/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/DerivedSources -F/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.dia -c /Users/DJBen/Documents/Developments/Werewolf/Werewolf/Werewolf-Prefix.pch -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.pth -MMD -MT dependencies -MF /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-dvlnenrvntdwejbxcxnjormaalal/Werewolf-Prefix.pch.d36"B72AF884-C179-492E-8EBB-2B273D02A738-
-
-CProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/PrecompiledHeaders/Werewolf-Prefix-fkpnmrtodmijbqgkwatcyrrmvqra/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Index/PrecompiledHeaders/Werewolf-Prefix-calycwzrjctylldzrriyfuboegaq_ast/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Index/PrecompiledHeaders/Werewolf-Prefix-chiixhjklvseqgdbditepgusstia_ast/Werewolf-Prefix.pch.pth Werewolf/Werewolf-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
-s386018109.458851
-e386018109.461591
-r1
-xProcessProductPackaging
-x/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection223"ProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision7f88753d2b02b741^c729763d2b02b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision0000000000000000^748"ProcessProductPackaging "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/DJBen/Library/MobileDevice/Provisioning Profiles/21FB1015-2F4E-4023-8860-E429B6F3D0A4.mobileprovision" -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app/embedded.mobileprovision36"5A6AA0E4-1A67-49DB-9713-A4E5DA5BE8F8-
-
-CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent
-s386018109.845052
-e386018109.848815
-r1
-xProcessProductPackaging
-x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection245"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent7578d83d2b02b741^9d4bd93d2b02b741^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent000000000080d041^818"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Intermediates/Werewolf.build/Debug-iphoneos/Werewolf.build/Werewolf.xcent36"18199684-7101-4565-8D3E-57A908AEC0D0-
-
-CTouch /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-s386035754.263245
-e386035754.316242
-r1
-xTouch
-x/Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Touch /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.appea75432a7002b741^4df5502a7002b741^---0#0#0#--441"Touch DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app    cd /Users/DJBen/Documents/Developments/Werewolf    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/DJBen/Documents/Developments/Werewolf/DerivedData/Werewolf/Build/Products/Debug-iphoneos/Werewolf.app36"8C50ED12-AC06-45FF-821C-D4E65F8B2BCE-
-
